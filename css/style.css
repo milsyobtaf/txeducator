@@ -1,3 +1,5 @@
+/* Margin and Padding Classes */
+
 .padding10 {
 	padding: 10px;
 }
@@ -10,8 +12,12 @@
 	padding-bottom: 10px;
 }
 
-.padding10sides {
-	padding: 0 10px;
+.padding10left {
+	padding-left: 10px;
+}
+
+.padding10right {
+	padding-right: 10px;
 }
 
 .margin10 {
@@ -26,8 +32,12 @@
 	margin-bottom: 10px;
 }
 
-.margin10sides {
-	margin: 0 10px;
+.margin10left {
+	margin-left: 10px;
+}
+
+.margin10right {
+	margin-right: 10px;
 }
 
 .padding20 {
@@ -42,8 +52,12 @@
 	padding-bottom: 20px;
 }
 
-.padding20sides {
-	padding: 0 20px;
+.padding20left {
+	padding-left: 20px;
+}
+
+.padding20right {
+	padding-right: 20px;
 }
 
 .margin20 {
@@ -58,9 +72,57 @@
 	margin-bottom: 20px;
 }
 
-.margin20sides {
-	margin: 0 20px;
+.margin20left {
+	margin-left: 20px;
 }
+
+.margin20right {
+	margin-right: 20px;
+}
+
+.padding40 {
+	padding: 40px;
+}
+
+.padding40top {
+	padding-top: 40px;
+}
+
+.padding40bottom {
+	padding-bottom: 40px;
+}
+
+.padding40left {
+	padding-left: 40px;
+}
+
+.padding40right {
+	padding-right: 40px;
+}
+
+.margin40 {
+	margin: 40px;
+}
+
+.margin40top {
+	margin-top: 40px;
+}
+
+.margin40bottom {
+	margin-bottom: 40px;
+}
+
+.margin40left {
+	margin-left: 40px;
+}
+
+.margin40right {
+	margin-right: 40px;
+}
+
+/* End Margin and Padding Classes */
+
+/* List Item Classes */
 
 .horizontal_list li {
 	display: inline;
@@ -77,6 +139,10 @@
 .list_lower_roman {
 	list-style-type: lower-roman;
 }
+
+/* End List Item Classes */
+
+/* Floats and Aligns */
 
 .floatright {
 	float: right;
@@ -97,6 +163,14 @@
 .textcenter {
 	text-align: center;
 }
+
+.textbottom {
+	vertical-align: middle;
+}
+
+/* End Floats and Aligns */
+
+/* Text Style Classes */
 
 .textjustify {
 	text-align: justify;
@@ -173,4 +247,21 @@ h6 {
 
 .delete {
 	text-decoration: line-through;
+}
+
+/* End Text Style Classes */
+
+/* Navigation Tabs */
+
+#nav_links ul {
+}
+
+#nav_links li {
+	background: transparent url('../images/tab.png') no-repeat;
+	height: 20px;
+}
+
+#nav_links li a {
+	text-decoration: none;
+	vertical-align: middle;
 }
