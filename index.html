@@ -22,7 +22,7 @@
 				pauseTime:7000,
 				startSlide:0, //Set starting Slide (0 index)
 				directionNav:true, //Next & Prev
-				directionNavHide:false, //Only show on hover
+				directionNavHide:true, //Only show on hover
 				controlNav:true, //1,2,3...
 				controlNavThumbs:false, //Use thumbnails for Control Nav
 				keyboardNav:true, //Use left & right arrows
@@ -31,7 +31,7 @@
 				captionOpacity:0.8, //Universal caption opacity				
 				});
 		});
-</script>
+	</script>
 </head>
 <body>
 <div class="container_12">
@@ -62,9 +62,28 @@
 			<img src="images/slideshow/slideshow2.png" title="Slideshow Image 2">
 			<img src="images/slideshow/slideshow3.png" title="Slideshow Image 3">
 		</div>
-		<section class="grid_12">
+		<section id="newsandevents" class="grid_4">
+			<h1>News and Events</h1>
+				<ul id="news">
+					<li>News Item</li>
+					<li>News Item</li>
+					<li>News Item</li>
+					<li>News Item</li>
+				</ul>
+				<ul id="events">
+					<li>Events Item</li>
+					<li>Events Item</li>
+					<li>Events Item</li>
+					<li>Events Item</li>
+				</ul>
 		</section>
-        <footer class="container_12">
+        <section id="content" class="grid_8">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+		</section>
+		<footer class="container_12">
 			<div id="footer_left" class="grid_4">
 				<ul id="footer_branding" class="horizontal_list">
 					<li><img src="images/tea-logo.png"></li>
