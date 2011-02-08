@@ -9,3 +9,15 @@
 .floatleft {
 	float: left;
 }
+
+.textright {
+	text-align: right;
+}
+
+.textleft {
+	text-align: left;
+}
+
+.smalltext {
+	font-size: .6em;
+}
