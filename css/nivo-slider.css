@@ -66,19 +66,49 @@
 	top:45%;
 	z-index:99;
 	cursor:pointer;
+	background: url("../images/arrows.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    height: 30px;
+    text-indent: -9999px;
+    width: 30px;
 }
-.nivo-prevNav {
-	left:0px;
+a.nivo-prevNav {
+	left: 15px;
 }
-.nivo-nextNav {
-	right:0px;
+a.nivo-nextNav {
+    background-position: -30px 0;
+    right: 15px;
 }
 /* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	position: absolute;
+	right: 0%;
+	bottom: -5%;
+}
 .nivo-controlNav a {
 	position:relative;
 	z-index:99;
 	cursor:pointer;
+	padding: 10px;
 }
 .nivo-controlNav a.active {
 	font-weight:bold;
+}
+
+/* Loading styles */
+#slider {
+    position:relative;
+    width:940px; /* Change this to your images width */
+    height:400px; /* Change this to your images height */
+    background:url("..images/loading.gif") no-repeat 50% 50%;
+	margin-bottom: 20px;
+}
+#slider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+#slider a {
+    border:0;
 }
