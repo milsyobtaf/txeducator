@@ -1,0 +1,11 @@
+.horizontal_list li {
+	display: inline;
+}
+
+.floatright {
+	float: right;
+}
+
+.floatleft {
+	float: left;
+}
