@@ -1,5 +1,81 @@
+.padding10 {
+	padding: 10px;
+}
+
+.padding10top {
+	padding-top: 10px;
+}
+
+.padding10bottom {
+	padding-bottom: 10px;
+}
+
+.padding10sides {
+	padding: 0 10px;
+}
+
+.margin10 {
+	margin: 10px;
+}
+
+.margin10top {
+	margin-top: 10px;
+}
+
+.margin10bottom {
+	margin-bottom: 10px;
+}
+
+.margin10sides {
+	margin: 0 10px;
+}
+
+.padding20 {
+	padding: 20px;
+}
+
+.padding20top {
+	padding-top: 20px;
+}
+
+.padding20bottom {
+	padding-bottom: 20px;
+}
+
+.padding20sides {
+	padding: 0 20px;
+}
+
+.margin20 {
+	margin: 20px;
+}
+
+.margin20top {
+	margin-top: 20px;
+}
+
+.margin20bottom {
+	margin-bottom: 20px;
+}
+
+.margin20sides {
+	margin: 0 20px;
+}
+
 .horizontal_list li {
 	display: inline;
+}
+
+.list_disc {
+	list-style-type: disc;
+}
+
+.list_upper_roman {
+	list-style-type: upper-roman;
+}
+
+.list_lower_roman {
+	list-style-type: lower-roman;
 }
 
 .floatright {
@@ -22,8 +98,17 @@
 	text-align: center;
 }
 
-h1 {
+.textjustify {
+	text-align: justify;
+}
 
+.textblock {
+	line-height: 1.3em;
+}
+
+h1 {
+	font-size: 1.6em;
+	font-weight: bold;
 }
 
 h2 {
@@ -46,7 +131,7 @@ h6 {
 
 }
 
-.serifs {
+.serif {
 	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif," "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
@@ -54,7 +139,7 @@ h6 {
 	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.sansserif .heavy {
+.heavy {
 	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
 }
 
