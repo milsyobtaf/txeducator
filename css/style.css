@@ -178,6 +178,7 @@
 
 .textblock {
 	line-height: 1.3em;
+	
 }
 
 h1 {
@@ -264,4 +265,22 @@ h6 {
 #nav_links li a {
 	text-decoration: none;
 	vertical-align: middle;
+}
+
+#subnav_links li {
+	background: #cc5500;
+	padding: 0 10px;
+}
+
+/* Main Page Content */
+
+#frontcontent p {
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+
+/* Footer Styles */
+
+#contact_info_footer {
+	margin-right: -65px;
 }
