@@ -1,3 +1,33 @@
+/* Background Color Classes */
+
+.blue { 
+	background-color: #2382a1; 
+}
+.green { 
+	background-color: #4be22d; 
+}
+.pink { 
+	background-color: #ff009d; 
+}
+.yellow {
+	background-color: yellow;
+}
+.gray {
+	background-color: gray;
+}
+
+/* Background Gradient Classes */
+
+.gradwhite {
+	background-image: url('../images/grad_white.png')
+}
+
+.gradblack {
+	background-image: url('../images/grad_black_30.png')
+}
+
+/* Rounded Corner Styles */
+
 /* Margin and Padding Classes */
 
 .padding10 {
@@ -254,11 +284,7 @@ h6 {
 
 /* Navigation Tabs */
 
-#nav_links ul {
-}
-
 #nav_links li {
-	background: transparent url('../images/tab.png') no-repeat;
 	height: 20px;
 }
 
