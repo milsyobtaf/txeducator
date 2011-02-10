@@ -280,6 +280,10 @@ h6 {
 	text-transform: uppercase;
 }
 
+.underline {
+	text-decoration: underline;
+}
+
 .delete {
 	text-decoration: line-through;
 }
@@ -302,10 +306,21 @@ h6 {
 	font-weight: bold;
 }
 
-#maincontent li {
+#maincontent ul li {
 	list-style-type: disc;
 	padding-bottom: 5px;
 	margin-left: 30px;
+}
+
+#maincontent ol li {
+	list-style-type: decimal;
+	padding-bottom: 5px;
+	margin-left: 30px;
+}
+
+#coda-slider-1 {
+	height: 500px;
+	min-height: 500px;
 }
 
 /* Footer Styles */
