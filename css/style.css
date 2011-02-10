@@ -265,7 +265,7 @@ h6 {
 }
 
 .strong {
-	font-weight: strong;
+	font-weight: bold;
 }
 
 .italic {
@@ -291,6 +291,21 @@ h6 {
 #frontcontent p {
 	padding-right: 20px;
 	padding-bottom: 10px;
+}
+
+#maincontent p {
+	padding-bottom: 10px;
+}
+
+#maincontent h3 {
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+
+#maincontent li {
+	list-style-type: disc;
+	padding-bottom: 5px;
+	margin-left: 30px;
 }
 
 /* Footer Styles */
