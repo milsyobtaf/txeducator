@@ -300,7 +300,7 @@ h6 {
 	padding-top: 29px;
 }
 
-/* Glow Tabs from http://events.jquery.org/2010/sf-bay-area/ */
+/* Primary Nav Links powered by Glow Tabs from http://events.jquery.org/2010/sf-bay-area/ */
 
 ul#nav_links {
 	height: 25px;
@@ -358,6 +358,7 @@ ul#nav_links li a:link, ul#nav_links li a:visited {
 	-webkit-transition: background-color 0.3s linear;
 	-moz-transition: background-color 0.3s linear;
 	-o-transition: background-color 0.3s linear;
+	font-weight: bold;
 }
 
 ul#nav_links li a:hover {
@@ -371,4 +372,17 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 	background: -moz-linear-gradient(top center, #d1d1d1, #f2f2f2 80%) repeat scroll 0 0 #f2f2f2;
 	background: -webkit-gradient(linear,left bottom,left top,color-stop(.2, #f2f2f2),color-stop(.8, #d1d1d1));
 	background-color: #f2f2f2;
+}
+
+#subnav_links {
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-radius-bottomright: 6px;
+	border-bottom-right-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	border-bottom-left-radius: 6px;
+	height: 100%;
+	background: -moz-linear-gradient(top center, #f2f2f2, #d1d1d1 80%) repeat scroll 0 0 #d1d1d1;
+	background: -webkit-gradient(linear,left bottom,left top,color-stop(.2, #d1d1d1),color-stop(.8, #f2f2f2));
+	background-color: #d1d1d1;
 }
