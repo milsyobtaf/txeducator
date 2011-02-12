@@ -290,6 +290,27 @@ h6 {
 
 /* End Text Style Classes */
 
+/* Header Content */
+
+#info_links li a {
+	padding: 5px 15px;
+	font-weight: bold;
+	color: #cccccc;
+	color: rgba(0, 0, 0, 0.7);
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+}
+
+#info_links li img {
+	padding-right: 5px;
+}
+
+#info_links li a:hover,
+#info_links li a:focus {
+	color: #000000;
+	background: rgba(0, 0, 0, 0.15);
+}
+
 /* Main Page Content */
 
 #frontcontent p {
