@@ -382,6 +382,7 @@ line-height:15px;
 
 #contact_info_footer {
 	margin-right: -65px;
+	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Override of mailto: link styling done at the link level above */
@@ -469,7 +470,6 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 /* Sub Navigation Links Fancy */
 
 #subnav_links {
-	padding: 5px 10px;
 	background: -moz-linear-gradient(top center, #f2f2f2, #d1d1d1 80%) repeat scroll 0 0 #d1d1d1;
 	background: -webkit-gradient(linear,left bottom,left top,color-stop(.2, #d1d1d1),color-stop(.8, #f2f2f2));
 	background-color: #d1d1d1;	
@@ -479,18 +479,22 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 	-webkit-border-bottom-left-radius: 6px;
 	-moz-border-radius-bottomleft: 6px;
 	border-bottom-left-radius: 6px;
+}
+
+.subnav_links {
+	padding: 5px 10px;
 	height: 100%;
 }
 
-#subnav_links li {
+.subnav_links li {
 	border-right: 1px dotted;
 }
 
-#subnav_links li:last-child {
+.subnav_links li:last-child {
 	border-right: none;
 }
 
-#subnav_links li a {
+.subnav_links li a {
 	padding: 0px 5px;
 	margin-right: 4px;
 	font-weight: bold;
@@ -500,16 +504,17 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 	text-decoration: none;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
-	border-radius: 6px;	
+	border-radius: 6px;
 }
 
-#subnav_links li a:hover,
-#subnav_links li a:focus {
-	color: #000000;
-	background: rgba(0, 0, 0, 0.15);
+.subnav_links li a:hover,
+.subnav_links li a:focus {
+	color: #2B477D;
+/*	background: rgba(0, 0, 0, 0.15);
 	background: -moz-linear-gradient(top center, #f2f2f2, #d1d1d1 80%) repeat scroll 0 0 #d1d1d1;
-	background: -webkit-gradient(linear,left bottom,left top,color-stop(.2, #d1d1d1),color-stop(.8, #f2f2f2));
-	background-color: #d1d1d1;
+	background: -webkit-gradient(linear,left bottom,left top,color-stop(.2, #d1d1d1),color-stop(.8, #f2f2f2)); 
+*/
+	background-color: #fff;
 }
 
 /* Main Page Content */
