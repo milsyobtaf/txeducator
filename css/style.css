@@ -227,6 +227,9 @@ h2 {
 	background: #C5C5C5;
 	max-width: 910px;
 	margin-right: 20px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
 }
 
 h3 {
@@ -511,6 +514,12 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 
 /* Main Page Content */
 
+.coda-slider {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
 #frontcontent p {
 	padding-right: 20px;
 	padding-bottom: 10px;
@@ -542,6 +551,42 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 	min-height: 500px;
 }
 
+/* Calendar Page Styling */
+
+table.calendartable th {
+	font-weight: bold;
+}
+
+table.calendartable td,
+table.calendartable th {
+	padding: 5px;
+	text-align: left;
+}
+
+table.calendartable th:last-child,
+table.calendartable td:last-child {
+	padding-left: 60px;
+}
+
+table.calendartable th:first-child {
+	text-align: center;
+}
+
+table.calendartable td:first-child {
+	text-align: right;
+}
+
+table.calendartable tr:nth-child(odd) {
+	background: #84d0d7;
+}
+
+table.calendartable tr:nth-child(even) {
+	background: #b7e4e8;
+}
+
+table.calendartable tr:hover {
+	background: yellow;
+}
 
 /* Contact Page Styling */
 
@@ -563,6 +608,14 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 	padding-top: 0px;
 }
 
+ul.contactinfo {
+	padding: 10px 0;
+}
+
+.contactinfo li {
+	margin-bottom: 3px;
+}
+
 .contactname {
 	font-weight: bold;
 }
@@ -575,7 +628,14 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 .contactnumber {
 	background:transparent url(../images/icons/phone.png) center right no-repeat;
 	display:inline-block;
-	padding-right:17px;
+	padding-right:20px;
+	line-height:15px;
+}
+
+.contactfax {
+	background:transparent url(../images/icons/fax.png) center right no-repeat;
+	display:inline-block;
+	padding-right:20px;
 	line-height:15px;
 }
 
