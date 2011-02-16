@@ -1,3 +1,8 @@
+/* Base (to keep Coda Slider working) */
+body {
+	padding: 20px;
+}
+
 /* Background Color Classes */
 
 .blue { 
@@ -217,7 +222,10 @@ h1 {
 }
 
 h2 {
-
+	font-size: 1.4em;
+	padding: 5px;
+	background: #C5C5C5;
+	max-width: 910px;
 }
 
 h3 {
@@ -290,6 +298,7 @@ h6 {
 
 /* End Text Style Classes */
 
+<<<<<<< HEAD
 /* Header Content */
 
 #info_links li a {
@@ -313,6 +322,59 @@ h6 {
 	color: #000000;
 	background: rgba(0, 0, 0, 0.15);
 }
+=======
+/* File Type Icon Styling */
+
+/* PDF document links */
+a[href$='.pdf'] {
+background:transparent url(../images/pdf.png) center left no-repeat;
+display:inline-block;
+padding-left:20px;
+line-height:15px;
+}
+ 
+/* Excel Documents links */
+a[href$='.xls'], a[href$='.csv'], a[href$='.xlw'], a[href$='.xlt'] {
+background:transparent url(../images/icons/excel.png) center right no-repeat;
+display:inline-block;
+padding-right:20px;
+line-height:15px;
+}
+ 
+/* Word Document Links */
+a[href$='.doc'], a[href$='.rtf'], a[href$='.wps'], a[href$='.txt'] {
+background:transparent url(../images/icons/word.png) center right no-repeat;
+display:inline-block;
+padding-right:20px;
+line-height:15px;
+}
+
+/* Powerpoint Document Links */
+a[href$='.ppt'], a[href$='.pptx'] {
+background:transparent url(../images/icons/powerpoint.png) center right no-repeat;
+display:inline-block;
+padding-right:20px;
+line-height:15px;
+}
+
+/* Publisher Document Links */
+a[href$='.pub'] {
+background:transparent url(../images/icons/publisher.png) center right no-repeat;
+display:inline-block;
+padding-right:20px;
+line-height:15px;
+}
+ 
+/* mailto: links */
+a[href^="mailto:"] {
+background:transparent url(../images/icons/email.png) center right no-repeat;
+display:inline-block;
+padding-right:20px;
+line-height:15px;
+}
+
+/* End File Type Icon Styling */
+>>>>>>> 4d4e1681634461f62f1a0b76f9e32a5262d32a47
 
 /* Main Page Content */
 
@@ -353,6 +415,14 @@ h6 {
 	margin-right: -65px;
 	padding-top: 29px;
 }
+
+/* Override of mailto: link styling done at the link level above */
+footer a {
+	background: inherit !important;
+	padding-right: inherit !important;
+	line-height: inherit !important;
+}
+/* End override */
 
 /* Primary Nav Links powered by Glow Tabs from http://events.jquery.org/2010/sf-bay-area/ */
 
@@ -442,6 +512,7 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 	-moz-border-radius-bottomleft: 6px;
 	border-bottom-left-radius: 6px;
 	height: 100%;
+<<<<<<< HEAD
 }
 
 #subnav_links li {
@@ -469,4 +540,110 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 #subnav_links li a:focus {
 	color: #000000;
 	background: rgba(0, 0, 0, 0.15);
+=======
+	background: -moz-linear-gradient(top center, #f2f2f2, #d1d1d1 80%) repeat scroll 0 0 #d1d1d1;
+	background: -webkit-gradient(linear,left bottom,left top,color-stop(.2, #d1d1d1),color-stop(.8, #f2f2f2));
+	background-color: #d1d1d1;
+}
+
+/* Contact Page Styling */
+
+#contactpage {
+	padding: 10px;
+}
+
+#contactpage h3 {
+	font-weight: bold;
+	color: red;
+	padding-top: 10px;
+}
+
+#contactpage ul {
+	margin: 5px 0 0 5px;
+}
+
+#generalcontact {
+	padding: 15px;
+}
+
+#generalcontact h3 {
+	padding-top: 0px;
+}
+
+.contactname {
+	font-weight: bold;
+}
+
+.contacttype {
+	font-weight: bold;
+	padding-right: 5px;
+}
+
+.contactnumber {
+	background:transparent url(../images/icons/phone.png) center right no-repeat;
+	display:inline-block;
+	padding-right:17px;
+	line-height:15px;
+}
+
+#contactpage a {
+	font-size: .8em;
+	padding-bottom: 3px;
+}
+
+/* Files Download Page Styling */
+
+#filespage {
+	padding: 10px;
+}
+
+/* Notecard Styling */
+li.notecard {
+	margin: 0 30px 15px 0;
+	list-style-type: none;
+	padding: 0 0 0 10px;
+	width: 205px;
+	height: 205px;
+	border: 1px solid #EFE768;
+	position: relative;
+	float: left;
+	background: #EFE768; /* old browsers */
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+}
+
+li.notecard li:after { 
+	z-index: -1; 
+	position: absolute; 
+	background: transparent; 
+	width: 70%; 
+	height: 55%; 
+	content: ''; 
+	right: 10px; 
+	bottom: 10px; 
+	transform: skew(15deg) rotate(6deg);
+	-webkit-transform: skew(15deg) rotate(6deg);
+	-moz-transform: skew(15deg) rotate(6deg);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+	-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+	-moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+li.notecard li:before { 
+	z-index: -2; 
+	position: absolute; 
+	background: transparent; 
+	width: 70%; 
+	height: 55%; 
+	content: ''; 
+	left: 10px; 
+	bottom: 10px; 
+	transform: skew(-15deg) rotate(-6deg); 
+	-webkit-transform: skew(-15deg) rotate(-6deg); 
+	-moz-transform: skew(-15deg) rotate(-6deg); 
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+	-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+	-moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+>>>>>>> 4d4e1681634461f62f1a0b76f9e32a5262d32a47
 }
