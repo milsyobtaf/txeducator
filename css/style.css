@@ -498,7 +498,6 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 	padding: 0px 5px;
 	margin-right: 4px;
 	font-weight: bold;
-	color: #cccccc;
 	color: rgba(0, 0, 0, 0.7);
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
 	text-decoration: none;
