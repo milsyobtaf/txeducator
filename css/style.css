@@ -298,6 +298,58 @@ h6 {
 
 /* End Text Style Classes */
 
+/* File Type Icon Styling */
+
+/* PDF document links */
+a[href$='.pdf'] {
+background:transparent url(../images/pdf.png) center left no-repeat;
+display:inline-block;
+padding-left:20px;
+line-height:15px;
+}
+ 
+/* Excel Documents links */
+a[href$='.xls'], a[href$='.csv'], a[href$='.xlw'], a[href$='.xlt'] {
+background:transparent url(../images/icons/excel.png) center right no-repeat;
+display:inline-block;
+padding-right:20px;
+line-height:15px;
+}
+ 
+/* Word Document Links */
+a[href$='.doc'], a[href$='.rtf'], a[href$='.wps'], a[href$='.txt'] {
+background:transparent url(../images/icons/word.png) center right no-repeat;
+display:inline-block;
+padding-right:20px;
+line-height:15px;
+}
+
+/* Powerpoint Document Links */
+a[href$='.ppt'], a[href$='.pptx'] {
+background:transparent url(../images/icons/powerpoint.png) center right no-repeat;
+display:inline-block;
+padding-right:20px;
+line-height:15px;
+}
+
+/* Publisher Document Links */
+a[href$='.pub'] {
+background:transparent url(../images/icons/publisher.png) center right no-repeat;
+display:inline-block;
+padding-right:20px;
+line-height:15px;
+}
+ 
+/* mailto: links */
+a[href^="mailto:"] {
+background:transparent url(../images/icons/email.png) center right no-repeat;
+display:inline-block;
+padding-right:20px;
+line-height:15px;
+}
+
+/* End File Type Icon Styling */
+
 /* Main Page Content */
 
 #frontcontent p {
@@ -337,6 +389,14 @@ h6 {
 	margin-right: -65px;
 	padding-top: 29px;
 }
+
+/* Override of mailto: link styling done at the link level above */
+footer a {
+	background: inherit !important;
+	padding-right: inherit !important;
+	line-height: inherit !important;
+}
+/* End override */
 
 /* Primary Nav Links powered by Glow Tabs from http://events.jquery.org/2010/sf-bay-area/ */
 
@@ -456,6 +516,18 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 .contacttype {
 	font-weight: bold;
 	padding-right: 5px;
+}
+
+.contactnumber {
+	background:transparent url(../images/icons/phone.png) center right no-repeat;
+	display:inline-block;
+	padding-right:17px;
+	line-height:15px;
+}
+
+#contactpage a {
+	font-size: .8em;
+	padding-bottom: 3px;
 }
 
 /* Files Download Page Styling */
