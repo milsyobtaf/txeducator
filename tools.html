@@ -44,18 +44,9 @@
 	<script>
 		$(document).ready(function() { 
 			$("table").tablesorter({ 
-				// pass the headers argument and assing a object 
-				headers: { 
-					// assign the secound column (we start counting zero) 
-					2: { 
-						// disable it by setting the property sorter to false 
-						sorter: false 
-					}, 
-					// assign the third column (we start counting zero) 
-					3: { 
-						// disable it by setting the property sorter to false 
-						sorter: false 
-					} 
+				headers: {
+					2: { sorter: false }, 
+					3: { sorter: false } 
 				} 
 			}); 
 		});
