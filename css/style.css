@@ -603,6 +603,37 @@ table.calendartable tr:hover {
 	padding-top: 10px;
 }
 
+table.programsummarytable tr {
+	padding-bottom: 5px;
+}
+
+table.programsummarytable th, td {
+	text-align: left;
+}
+
+table.programsummarytable th.summarycol1 {
+	width: 165px;
+}
+
+table.programsummarytable th.summarycol2 {
+	width: 80px;
+}
+
+table.programsummarytable th.summarycol3 {
+	width: 175px;
+}
+
+table.programsummarytable thead tr {
+	background-color: #ababab;
+}
+
+table.programsummarytable tbody tr:nth-child(odd) {
+	background-color: #ffffff;
+}
+
+table.programsummarytable tbody tr:nth-child(even) {
+	background-color: #cdcdcd;
+}
 /* Contact Page Styling */
 
 #contactpage {

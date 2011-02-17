@@ -28,6 +28,10 @@
 	</script>
 	<link href="plugins/jquery/smoothness/jquery-ui.css" type="text/css" rel="stylesheet" />
 	<!-- End optional includes -->
+	<!-- jQuery Tablesorter is only needed for table sorting, currently used on Tools & Resources page in the Model Programs section -->
+	<script type="text/javascript" src="plugins/jquery/jquery.tablesorter.min.js"></script>
+	<link href="plugins/jquery/jquery-sorter-blue/style.css" type="text/css" rel="stylesheet" />
+	<!-- End optional includes -->
 	<script>
 		$(function() {
 			$( ".accordion" ).accordion({
@@ -35,6 +39,25 @@
 			collapsible: true,
 			active: false
 			});
+		});
+	</script>
+	<script>
+		$(document).ready(function() { 
+			$("table").tablesorter({ 
+				// pass the headers argument and assing a object 
+				headers: { 
+					// assign the secound column (we start counting zero) 
+					2: { 
+						// disable it by setting the property sorter to false 
+						sorter: false 
+					}, 
+					// assign the third column (we start counting zero) 
+					3: { 
+						// disable it by setting the property sorter to false 
+						sorter: false 
+					} 
+				} 
+			}); 
 		});
 	</script>
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
@@ -334,56 +357,264 @@
 				<div class="panel-wrapper">
 					<h2 class="title">Implementation</h2>
 						<p class="lesssmalltext"><a href="#1" class="xtrig" rel="coda-slider-1">Back</a></p>
-					<p>Cras luctus fringilla odio vel hendrerit....</p>
+						<h3>Implementation Overview</h3>
+							<p>These documents will provide guidance on the overall structure of implementation. District planning committees should familiarize themselves with this section before the start of the implementation year in order to prepare for the multitude of challenges that implementation can present.</p>
+						<h3>Challenges &amp; Solutions</h3>
+							<p>Based on our experiences working with Texas districts and experiences reported from districts implementing strategic compensation nationwide, Technical Assistance has prepared a series of "Challenges and Solutions" documents covering all aspects of implementation. Not only will these documents offer specific solutions to common problems, but they also harken back to the general principles of implementation outlined in the overview materials.</p>
+						<h3>Forms &amp; Planners</h3>
+							<p>This section contains a series of planners and graphic organizers that Technical Assistance developed to accompany our trainings and workshops. It also contain forms that districts have created to provide examples for districts looking to modify their implementation procedures.</p>
+						<div class="accordion">
+						<h4><a href="#">Implementation Overview</a></h4>
+							<div>
+									<ul>
+										<li><a href="docs/Implementation/Implementation%20Overview/Step-by-Step%20Guide%20to%20Implementation.pdf">Step-by-Step Guide to Implementation</a></li>
+										<li><a href="docs/Implementation/Implementation%20Overview/Proactively%20Planning%20for%20Implementation.pdf">Proactively Planning for Implementation</a></li>
+									</ul>
+							</div>
+						<h4><a href="#">Challenges &amp; Solutions</a></h4>
+							<div>
+									<ul>
+										<li><a href="docs/Implementation/Challenges &amp; Solutions/Program_Monitoring_Challenges_and_Solutions.pdf" class="main">Program Management &amp; Monitoring</a></li>
+										<li><a href="docs/Implementation/Challenges &amp; Solutions/Data_Management_Challenges_and_Solutions.pdf" class="main">Data Management</a></li>
+										<li><a href="docs/Implementation/Challenges &amp; Solutions/Communication_Challenges_and_Solutions.pdf" class="main">Communicaton</a></li>
+										<li><a href="docs/Implementation/Challenges &amp; Solutions/Common Payout Challenges and Solutions.pdf" class="main">Payouts</a></li>
+										<li><a href="docs/Implementation/Challenges &amp; Solutions/Evaluation_Challenges_and_Solutions.pdf" class="main">Program Evaluation</a></li>
+										<li><a href="docs/Implementation/Challenges &amp; Solutions/Sustainability_Challenges_and_Solutions.pdf" class="main">Sustainability</a></li>
+									</ul>
+							</div>
+						<h4><a href="#">Forms &amp; Planners</a></h4>
+							<div>
+								<ul><span class="strong">Planners (Word Documents)</span>
+									<li><a href="docs/Implementation/Sample Forms/Electronic Action Plan Template Fall Implementation - final activity.doc" align="left">Overall Implementation Action Plan Template</a></li>
+									<li><a href="docs/Implementation/Sample Forms/Program Management Flowchart.docx" align="left">Program Management Organizer</a></li>
+									<li><a href="docs/Implementation/Sample Forms/Program Management Plan Timeline.docx" align="left">Program Management Plan Template</a></li>
+									<li><a href="docs/Implementation/Sample Forms/Program Monitoring Chart.docx" align="left">Program Monitoring Organizer</a></li>
+									<li><a href="docs/Workshops/Fall10Implement/Program Monitoring Plan.docx" align="left">Program Monitoring Plan Template</a></li>
+									<li><a href="docs/Workshops/Fall10Implement/District Communication Plan.docx" align="left">District Communication Plan Template</a></li>
+								</ul>
+								<ul><span class="strong">Sample District-Created Forms</span>
+									<li><a href="docs/Implementation/Sample Forms/Ysleta Employee Acknowledgement Form.pdf">Employee Acknowledgement Form</a></li>
+									<li><a href="docs/Implementation/Sample Forms/Sample Teacher Understanding and Acknowledgement.pdf">Teacher Understanding and Documentation Form</a></li>
+									<li><a href="docs/Implementation/Sample Forms/Sample Award_Appeal_Form.pdf">Award Appeal Form</a></li>
+									<li><a href="docs/Implementation/Sample Forms/Sample Class Roster Verification.pdf">D.A.T.E. Class Roster Verification Form</a></li>
+									<li><a href="docs/Implementation/Sample Forms/Port Arthur Documentation.pdf">Tutorial Log</a></li>
+								</ul>
+							</div>
+						</div>
 				</div>
 			</div>
 			<div class="panel">
 				<div class="panel-wrapper">
 					<h2 class="title">Program Design</h2>
 						<p class="lesssmalltext"><a href="#1" class="xtrig" rel="coda-slider-1">Back</a></p>
-					<p>Nulla ultricies ornare erat...</p>
+							<ul>
+								<li><a href="docs/Design/DATE Big Picture.pptx">D.A.T.E.: The Big Picture Presentation</a></li>
+								<li><a href="docs/Design/Step-by-Step Guide to Designing a D.A.T.E. Program.pdf">Step-by-Step Guide for Developing a D.A.T.E. Program</a></li>
+								<li><a href="docs/Design/Key_Elements_of_and_Effective_Performance_Award_System_handout.pdf">Key Elements of an Effective Performance Award Program</a></li>
+								<li><a href="docs/Design/Designing_a_Performance_Award_Program.pdf">Designing a D.A.T.E. plan Decision Tree</a></li>
+							</ul>
 				</div>
 			</div>
 			<div class="panel">
 				<div class="panel-wrapper">
 					<h2 class="title">Payout</h2>
 						<p class="lesssmalltext"><a href="#1" class="xtrig" rel="coda-slider-1">Back</a></p>					
-					<p>Lorem ipsum dolor sit amet...</p>
+							<ul>
+								<li><a href="docs/Payout_Tools/IPSI Payout Session Presentation.pdf">Payout Presentation: &quot;Avoiding Crisis in the Endgame&quot; from D.A.T.E. Summer Institute</a></li>
+								<li><a href="docs/Payout_Tools/Key Payout Stakeholders.pdf">Key Payout Stakeholders &amp; Activities</a></li>
+								<li><a href="docs/Implementation/Challenges &amp; Solutions/Payouts_Challenges_and_Solutions.pdf">Payout Challenges and Solutions</a></li>
+								<li><a href="docs/Payout_Tools/Detailed Sample Payout Timeline.pdf">Detailed Sample Payout Timeline</a></li>
+								<li><a href="docs/Payout_Tools/Sample D.A.T.E. Payout Flowchart.pdf">Sample Payout Flowchart</a></li>
+								<li><a href="docs/Payout_Tools/Payout Communication Organizer.pdf">Payout Communication Organizer</a></li>
+							</ul>
 				</div>
 			</div>
 			<div class="panel">
 				<div class="panel-wrapper">
 					<h2 class="title">Data Capacity</h2>
 						<p class="lesssmalltext"><a href="#1" class="xtrig" rel="coda-slider-1">Back</a></p>
-					<p>Proin nec turpis eget dolor dictum lacinia...</p>
+						<p><a href="http://portal.battelleforkids.org/Texas/Learn/Learn.html" target="_blank">Battelle for Kids Online Value Added Courses</a></p>
+						<p>All D.A.T.E. districts can access BFK's highly interactive and informative courses on value added to learn more about this method for determining performance awards. If you need a district access code, please <a href="contact.html">contact us.</a></p>
+						<p><a href="http://portal.battelleforkids.org/Texas/Learn/Learn.html" target="_blank" alt="Online value-added courses are available free to Texas D.A.T.E. grant administrators from Battelle for Kids"><img src="images/texas_bannerad.gif" alt="Click to visit Training Modules" name="TrainingModules" width="125" height="126" border="0" id="TrainingModules" class="main"/></a></p>
+						<ul><span class="strong">Additional Resources</span>
+							<li><a href="docs/Data Capacity/Battelle_for_Kids_Presentation.pdf" class="main">Battelle for Kids Presentation on Data Use and Model Building</a></li>
+							<li><a href="docs/Implementation/Challenges &amp; Solutions/Data_Management_Challenges_and_Solutions.pdf" class="main">Data Management Challenges and Solutions</a></li>
+						</ul>
 				</div>
 			</div>
 			<div class="panel">
 				<div class="panel-wrapper">
 					<h2 class="title">Stakeholder Engagement</h2>
 						<p class="lesssmalltext"><a href="#1" class="xtrig" rel="coda-slider-1">Back</a></p>
-					<p>Cras luctus fringilla odio vel hendrerit....</p>
+						<ul>
+							<li><a href="docs/Communication/Communication Best Practices.pdf">Communication &amp; Stakeholder Engagement: Best Practices</a></li>
+							<li><a href="docs/Communication/Sample Communication Plan.pdf">Sample Communication Plan</a></li>
+							<li><a href="docs/Communication/Strategic Communication Plan.pdf">Sample Strategic Communication Plan--Getting &quot;on message&quot;</a></li>
+							<li><a href="docs/Communication/D.A.T.E. 101 (Cycle 2).pdf">D.A.T.E. 101 Power Point--Adaptable presentation to explain D.A.T.E.to stakeholders</a></li>
+							<li><a href="docs/Communication/District Communication Plan.doc"class="main">Communication Plan Organizer</a></li>
+						</ul>
 				</div>
 			</div>
 			<div class="panel">
 				<div class="panel-wrapper">
 					<h2 class="title">Sustainability</h2>
 						<p class="lesssmalltext"><a href="#1" class="xtrig" rel="coda-slider-1">Back</a></p>
-					<p>Nulla ultricies ornare erat...</p>
+						<ul>
+						<li><a href="docs/Sustainability/IPSI Sust Presentation.pdf">Sustainability Presentation from D.A.T.E. Summer Institute</a></li>
+						<li><a href="docs/Sustainability/Potential Sustainability Sources.pdf">Potential Sustainability Sources</a></li>
+						<li><a href="docs/Sustainability/Sustainability Planner.pdf">Sustainability Planner</a></li>
+						<li><a href="docs/Implementation/Challenges &amp; Solutions/Sustainability_Challenges_and_Solutions.pdf">Sustainability Challenges and Solutions</a></li>
+						<li><a href="docs/Sustainability/Louisiana_TAP_sustainability_plan.pdf">Louisiana Sustainability Plan</a></li>
+						</ul>
 				</div>
 			</div>
 			<div class="panel">
 				<div class="panel-wrapper">
 					<h2 class="title">Model Programs</h2>
 						<p class="lesssmalltext"><a href="#1" class="xtrig" rel="coda-slider-1">Back</a></p>
-					<p>Lorem ipsum dolor sit amet...</p>
-				</div>
+						<h3>Model Programs</h3>
+						<p>This section contains detailed documentation and descriptions of successful D.A.T.E. programs. It is broken down by basic geographic type: urban, suburban, and rural. Here you will find excerpts from schools' actual D.A.T.E. applications as well as other supporting documentation.</p>
+						<div class="accordion">
+							<h4><a href="#">Urban</a></h4>
+							<div>
+							Programs Coming Soon
+							</div>
+							<h4><a href="#">Suburban</a></h4>
+							<div>
+							Programs Coming Soon
+							</div>
+							<h4><a href="#">Rural</a></h4>
+							<div>
+							Programs Coming Soon
+							</div>
+						</div>
+						<h3 class="padding10top">Program Summaries</h3>
+						<p>This section contains basic, one page descriptions of various D.A.T.E. plans categorized by school and plan type. It is an excellent resource to get a general sense of the different types of plans that schools have attempted.</p>
+						<div class="accordion">
+							<h4><a href="#">Program Summaries</a></h4>
+							<div>
+								<p>The following programs offer examples of programs implemented by districts across the state. For more information on how to incorporate the information found here, please <a href="contact.html">contact the technical assistance team</a>.</p>
+								<table class="programsummarytable tablesorter">
+								<thead>
+									<tr class="strong">
+										<th scope="col" class="summarycol1">District Name</td>
+										<th scope="col" class="summarycol2">Size</td>
+										<th scope="col" class="summarycol3">Schools Included</td>
+										<th scope="col" class="summarycol4">Plan Features/Focus</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><strong><a href="docs/Models/Aransas.pdf">Aransas County</a></strong></td>
+										<td>Medium</td>
+										<td>Middle School </td>
+										<td>All campus staff, professional development/program monitoring</td>
+									</tr>
+									<tr>
+										<td><a href="docs/Models/Austin.pdf"><strong>Austin (REACH)</strong></a></td>
+										<td>Large</td>
+										<td>High needs pilot schools</td>
+										<td>All campus teachers, Teacher created student learning objectives, professional growth awards</td>
+									</tr>
+									<tr>
+										<td><a href="docs/Models/Ballinger.pdf"><strong>Ballinger </strong></a></td>
+										<td>Small</td>
+										<td>All campuses</td>
+										<td>All classroom teachers, focus on technology infusion</td>
+									</tr>
+									<tr>
+										<td><a href="docs/Models/Conroe.pdf"><strong>Conroe</strong></a></td>
+										<td>Large</td>
+										<td>High needs campuses</td>
+										<td>Combination of TAKS teachers in Part I, opening it up to all teachers in Part II</td>
+									</tr>
+									<tr>
+										<td><a href="docs/Models/Galena Park.pdf"><strong>Galena Park</strong></a></td>
+										<td>Small</td>
+										<td>All campuses</td>
+										<td>Focus on Math/Science, adds incentives for recruitment/retention and instructional specialists</td>
+									</tr>
+									<tr>
+										<td><a href="docs/Models/PEAK_Brochure.pdf"><strong>Fort Worth (PEAK)</strong></a></td>
+										<td>Large</td>
+										<td>High needs campuses</td>
+										<td>Multiple awards based on individual, group, and campus performances</td>
+									</tr>
+									<tr>
+										<td><a href="docs/Models/ASPIRE.pdf"><strong>Houston (ASPIRE)</strong></a></td>
+										<td>Large</td>
+										<td>All campuses</td>
+										<td>Value-added model</td>
+									</tr>
+									<tr>
+										<td><strong><a href="docs/Models/IDEA.pdf">IDEA Public Schools</a></strong></td>
+										<td>Medium</td>
+										<td>Two charter campuses</td>
+										<td>Includes all core teachers, individual goals for each teacher</td>
+									</tr>
+									<tr>
+										<td><a href="docs/Models/Irving.pdf"><strong>Irving</strong></a></td>
+										<td>Large</td>
+										<td>All campuses</td>
+										<td>All core teachers, focus on economically disadvantaged, subject-team based awards</td>
+									</tr>
+									<tr>
+										<td><a href="docs/Models/La Joya.pdf"><strong>La Joya</strong></a></td>
+										<td>Large</td>
+										<td>High School</td>
+										<td>Tiered Awards for TAKS teachers, support-based awards for non-TAKS teachers</td>
+									</tr>
+									<tr>
+										<td><a href="docs/Models/Longview.pdf"><strong>Longview</strong></a></td>
+										<td>Medium</td>
+										<td>All campuses</td>
+										<td>Value-added model</td>
+									</tr>
+									<tr>
+										<td><a href="docs/Models/Mount Pleasant ISD.pdf">Mount Pleasant</a></td>
+										<td>Medium</td>
+										<td>High needs campuses</td>
+										<td>All teachers and grade levels, rewards, student grown on TAKS, instructional coaches math/science, mentoring</td>
+									</tr>
+									<tr>
+										<td><a href="docs/Models/Northside.pdf"><strong>Northside</strong></a></td>
+										<td>Large</td>
+										<td>High needs campuses</td>
+										<td>Rewads TAKS teachers for performance of campus' content area and funds TAKS support teachers</td>
+									</tr>
+									<tr>
+										<td><a href="docs/Models/Pasadena.pdf"><strong>Pasadena</strong></a></td>
+										<td>Large</td>
+										<td>All campuses</td>
+										<td>Rewards all teachers based on content team goals.</td>
+									</tr>
+									<tr>
+										<td><a href="docs/Models/Prairiland.pdf"><strong>Prairiland</strong></a></td>
+										<td>Small</td>
+										<td>Elementary campuses</td>
+										<td>Core teachers rewarded on a combination of TAKS, benchmarks, and student portfolios</td>
+									</tr>
+									<tr>
+										<td><a href="docs/Models/Round Rock.pdf"><strong>Round Rock</strong></a></td>
+										<td>Large</td>
+										<td>High needs high schools, elementary schools, and alternative campuses</td>
+										<td>All classroom teachers rewarded for growth in TAKS with extra awards or Math and Science.</td>
+									</tr>
+								</tbody>
+								</table>
+							</div>
+						</div>
+			</div>
 			</div>
 			<div class="panel">
 				<div class="panel-wrapper">
 					<h2 class="title">Evaluation / Amendments</h2>
 						<p class="lesssmalltext"><a href="#1" class="xtrig" rel="coda-slider-1">Back</a></p>
-					<p>Proin nec turpis eget dolor dictum lacinia...</p>
+						<ul>
+							<li><a href="docs/Evaluation/End of Year Reflection Questions.pdf">D.A.T.E. End of Year Reflection Questions</a></li>
+							<li><a href="docs/Evaluation/Performance Measure Review Questions.pdf">Evaluating the Success of a Performance Measure: Reflection Questions</a></li>
+							<li><a href="docs/Evaluation/Programmatic  Budgetary Amendment cheat sheet (3).pdf">Program and Budget Amendment Cheat Sheet</a></li>
+						</ul>
 				</div>
 			</div>
 			<div class="panel">
@@ -397,14 +628,28 @@
 				<div class="panel-wrapper">
 					<h2 class="title">Newsletter</h2>
 						<p class="lesssmalltext"><a href="#1" class="xtrig" rel="coda-slider-1">Back</a></p>
-					<p>Nulla ultricies ornare erat...</p>
+						<ul>
+							<li><a href="docs/Newsletter/January Newsletter.pdf">January 2011</a></li>
+							<li><a href="docs/Newsletter/December Newsletter.pdf">December 2010</a></li>
+							<li><a href="docs/Newsletter/November UpDATEs.pdf">November 2010</a></li>
+							<li><a href="docs/Newsletter/October 2010.pdf">October 2010</a></li>
+						</ul>
 				</div>
 			</div>
 			<div class="panel">
 				<div class="panel-wrapper">
-					<h2 class="title">Research / Policy Briefs</h2>
+					<h2 class="title">Insitute for Public School Initiatives Research / Policy Briefs</h2>
 						<p class="lesssmalltext"><a href="#1" class="xtrig" rel="coda-slider-1">Back</a></p>
-					<p>Nulla ultricies ornare erat...</p>
+						<ul>
+							<li><a href="docs/Research/Successful Strategic Compensation Programs.pdf">Guthrie, J. &amp; Schuermann, P. (2010) <em>Successful Strategic Compensation Programs</em></a></li>
+							<li><a href="docs/Research/D.A.T.E By the Numbers 2010.pdf">IPSI. (2010) <em>D.A.T.E. By the Numbers 2010</em></a></li>
+							<li><a href="docs/Research/Teacher Organizations and New Forms of Compensation.pdf">Koppich, J. (2010). <em>Teacher Organizations and New Forms of Teacher Compensation</em></a></li>
+							<li><a href="docs/Research/More than Merit.pdf">Volonnino, M, Zavadsky, H., Barkowski, E, &amp; Turner, M. (2010) More than Merit: Case<br /></a></li>
+							<li><a href="docs/Research/More than Merit.pdf">Studies in Strategic Compensation</a></li>
+							<li><a href="docs/Research/Market_Based_Reform_of_Teacher_Compensation_110609_FINAL.pdf">Podgursky, M. (2009). <em>Market Based Reform of Teacher Compensation</em></a></li>
+							<li><a href="docs/Research/Technical_Assistance_as_a_State_Model_110609_FINAL.pdf">Zavadsky, H., Barkowski, E., &amp; Volonnino, M. (2009)<em> Technical Assistance as a State Model</em></a></li>
+							<li><a href="docs/Research/Stakeholder Engagement and Communication Brief.pdf">Koppich, J. (2008). <em>Stakeholder Engagment and Communication</em></a></li>
+						</ul>
 				</div>
 			</div>
 		</div><!-- .coda-slider -->
