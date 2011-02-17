@@ -330,50 +330,50 @@ h6 {
 
 /* PDF document links */
 a[href$='.pdf'] {
-background:transparent url(../images/pdf.png) center left no-repeat;
-display:inline-block;
-padding-left:20px;
-line-height:15px;
+	background:transparent url(../images/icons/pdf.png) center right no-repeat;
+	display:inline-block;
+	padding-right:25px;
+	line-height:20px;
 }
  
 /* Excel Documents links */
 a[href$='.xls'], a[href$='.csv'], a[href$='.xlw'], a[href$='.xlt'] {
-background:transparent url(../images/icons/excel.png) center right no-repeat;
-display:inline-block;
-padding-right:20px;
-line-height:15px;
+	background:transparent url(../images/icons/excel.png) center right no-repeat;
+	display:inline-block;
+	padding-right:25px;
+	line-height:20px;
 }
  
 /* Word Document Links */
-a[href$='.doc'], a[href$='.rtf'], a[href$='.wps'], a[href$='.txt'] {
-background:transparent url(../images/icons/word.png) center right no-repeat;
-display:inline-block;
-padding-right:20px;
-line-height:15px;
+a[href$='.doc'], a[href$='.docx'], a[href$='.rtf'], a[href$='.wps'], a[href$='.txt'] {
+	background:transparent url(../images/icons/word.png) center right no-repeat;
+	display:inline-block;
+	padding-right:25px;
+	line-height:20px;
 }
 
 /* Powerpoint Document Links */
-a[href$='.ppt'], a[href$='.pptx'] {
-background:transparent url(../images/icons/powerpoint.png) center right no-repeat;
-display:inline-block;
-padding-right:20px;
-line-height:15px;
+	a[href$='.ppt'], a[href$='.pptx'] {
+	background:transparent url(../images/icons/powerpoint.png) center right no-repeat;
+	display:inline-block;
+	padding-right:25px;
+	line-height:20px;
 }
 
 /* Publisher Document Links */
 a[href$='.pub'] {
-background:transparent url(../images/icons/publisher.png) center right no-repeat;
-display:inline-block;
-padding-right:20px;
-line-height:15px;
+	background:transparent url(../images/icons/publisher.png) center right no-repeat;
+	display:inline-block;
+	padding-right:25px;
+	line-height:20px;
 }
  
 /* mailto: links */
 a[href^="mailto:"] {
-background:transparent url(../images/icons/email.png) center right no-repeat;
-display:inline-block;
-padding-right:20px;
-line-height:15px;
+	background:transparent url(../images/icons/email.png) center right no-repeat;
+	display:inline-block;
+	padding-right:25px;
+	line-height:20px;
 }
 
 /* End File Type Icon Styling */
@@ -546,7 +546,7 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 }
 
 #coda-slider-1 {
-	height: 500px;
+	height: 100%;
 	min-height: 500px;
 }
 
