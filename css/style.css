@@ -519,12 +519,17 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 	border-radius: 6px;
 }
 
+.panel-wrapper p a.xtrig {
+	padding: 0 0 10px 10px;
+	display: block;
+}
+
 #frontcontent p {
 	padding-right: 20px;
 	padding-bottom: 10px;
 }
 
-#maincontent p {
+#sontent p {
 	padding-bottom: 10px;
 }
 
@@ -585,6 +590,17 @@ table.calendartable tr:nth-child(even) {
 
 table.calendartable tr:hover {
 	background: yellow;
+}
+
+/* Tools & Resources Page Styling */
+
+.ui-accordion,
+.ui-accordion-header a {
+	font-size: .8em;
+}
+
+.accordion {
+	padding-top: 10px;
 }
 
 /* Contact Page Styling */
