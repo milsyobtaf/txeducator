@@ -337,7 +337,7 @@ a[href$='.pdf'] {
 }
  
 /* Excel Documents links */
-a[href$='.xls'], a[href$='.csv'], a[href$='.xlw'], a[href$='.xlt'] {
+a[href$='.xls'], a[href$='.xlsx'], a[href$='.csv'], a[href$='.xlw'], a[href$='.xlt'] {
 	background:transparent url(../images/icons/excel.png) center right no-repeat;
 	display:inline-block;
 	padding-right:25px;
