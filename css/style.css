@@ -1,6 +1,16 @@
 /* Base (to keep Coda Slider working) */
 body {
-	padding: 20px;
+	padding: 0 20px 20px 20px;
+}
+
+/* Background Colors */
+
+body {
+	background-color: #F6D565;
+}
+
+#main_container {
+	background-color: #cdcdcd;
 }
 
 /* Background Color Classes */
@@ -303,6 +313,10 @@ h6 {
 /* End Text Style Classes */
 
 /* Header Content */
+
+#header_left {
+	height: 122px;
+}
 
 #info_links li a {
 	padding: 10px 10px 5px;
@@ -645,12 +659,6 @@ table.programsummarytable tbody tr:nth-child(even) {
 	padding: 10px;
 }
 
-#contactpage h3 {
-	font-weight: bold;
-	color: red;
-	padding-top: 10px;
-}
-
 #contactboxes ul {
 	margin: 5px 0 0 9px;
 }
@@ -660,11 +668,11 @@ table.programsummarytable tbody tr:nth-child(even) {
 }
 
 ul.contactinfo {
-	padding: 10px 0;
+	padding: 5px 0;
 }
 
 .contactinfo li {
-	margin-bottom: 3px;
+	
 }
 
 .contactname {
@@ -708,10 +716,20 @@ ul.contactinfo {
 }
 
 /* Notecard Styling */
+
+li.notecard h3 {
+/*	font-family: 'Permanent Marker', serif; */
+	font-family: 'Neucha', serif;
+	font-size: 1.4em;
+	color: red;
+	padding-top: 5px;
+	font-weight: bold;	
+}
+
 li.notecard {
 	margin: 0 30px 15px 0;
 	list-style-type: none;
-	padding: 0 0 0 10px;
+	padding: 0 0 0 5px;
 	width: 205px;
 	height: 205px;
 	border: 1px solid #EFE768;

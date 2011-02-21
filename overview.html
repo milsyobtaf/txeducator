@@ -27,11 +27,11 @@
 	<!-- End optional includes -->
 </head>
 <body>
-<div class="container_12">
+<div id="main_container" class="container_12">
         <header class="grid_12">
 			<div id="header_top" class="grid_12 alpha omega padding10">
 				<ul id="info_links" class="horizontal_list floatright smallcap sansserif">
-					<li class=""><a href="contact.html"><img src="images/icons/contactsm.png">Contact</a></li>				
+					<li class=""><a href="newsletter.html"><img src="images/icons/contactsm.png">Newsletter</a></li>
 					<li class=""><a href="discussion.html"><img src="images/icons/discussionsm.png">Discussion</a></li>
 					<li class=""><a href="files.html"><img src="images/icons/filessm.png">Files</a></li>
 				</ul>
@@ -44,10 +44,12 @@
 			</div>
 		<nav class="grid_12 alpha omega">
 			<ul id="nav_links" class="horizontal_list uppercase sansserif textcenter">
-				<li class="grid_3 alpha selected"><a href="overview.html">Overview</a></li>
-				<li class="grid_3"><a href="calendar.html">Calendar</a></li>
-				<li class="grid_3"><a href="tools.html">Tools & Resources</a></li>
-				<li class="grid_3 omega"><a href="faq.html">FAQ</a></li>
+				<li class="grid_2 selected alpha"><a href="overview.html">Overview</a></li>
+				<li class="grid_2"><a href="calendar.html">Calendar</a></li>
+				<li class="grid_2"><a href="tools.html">Tools</a></li>
+				<li class="grid_2"><a href="resources.html">Resources</a></li>
+				<li class="grid_2"><a href="faq.html">FAQ</a></li>							
+				<li class="grid_2 omega"><a href="contact.html">Contact</a></li>
 				<li class="shadow"></li>
 			</ul>
 			<ul id="subnav_links" class="coda-nav horizontal_list uppercase sansserif textleft subnav_links">
@@ -125,23 +127,25 @@
 		</div><!-- .coda-slider -->
 		</div><!-- .coda-slider-wrapper -->
 		<section class="clear"></section>
-		<footer id="footer_left" class="grid_6 alpha">
-			<p class="smalltext textbottom">&copy; 2007 - <?php echo date("Y"); ?> The University of Texas at Austin. All rights reserved. The materials available on this website ("Materials") are protected by United States copyright law. The University of Texas at Austin maintains an ownership interest in the Materials. No reproduction, modification, distribution or public display of the Materials is permitted without the express written consent of The University of Texas at Austin. Please contact the <a href="mailto:txeducatorawards@ipsi.utexas.edu">Technical Assistance Center</a> for licensing information.</p>
-		</footer>
-		<footer id="footer_center" class="grid_2 textleft">
-			<ul id="contact_info_footer" class="textright smallcap lesssmalltext">
-				<li>220 W 7th Street</li>
-				<li>Suite 1.100</li>
-				<li>Austin, TX 78701</li>
-				<li>Ph: 512.232.2255</li>
-				<li>Fax: 512.322.3798</li>
-			</ul>
-		</footer>
-		<footer id="footer_right" class="grid_4 textright omega">
-			<ul id="footer_branding" class="horizontal_list">
-				<li><img src="images/tea-logo.png"></li>
-				<li><img src="images/ipsi-logo.png"></li>
-			</ul>
+		<footer>
+			<div id="footer_left" class="grid_6 alpha">
+				<p class="smalltext textbottom">&copy; 2007 - <?php echo date("Y"); ?> The University of Texas at Austin. All rights reserved. The materials available on this website ("Materials") are protected by United States copyright law. The University of Texas at Austin maintains an ownership interest in the Materials. No reproduction, modification, distribution or public display of the Materials is permitted without the express written consent of The University of Texas at Austin. Please contact the <a href="mailto:txeducatorawards@ipsi.utexas.edu">Technical Assistance Center</a> for licensing information.</p>
+			</div>
+			<div id="footer_center" class="grid_2 textleft">
+				<ul id="contact_info_footer" class="textright smallcap lesssmalltext">
+					<li>220 W 7th Street</li>
+					<li>Suite 1.100</li>
+					<li>Austin, TX 78701</li>
+					<li>Ph: 512.232.2255</li>
+					<li>Fax: 512.322.3798</li>
+				</ul>
+			</div>
+			<div id="footer_right" class="grid_4 textright omega">
+				<ul id="footer_branding" class="horizontal_list">
+					<li><img src="images/tea-logo.png"></li>
+					<li><img src="images/ipsi-logo.png"></li>
+				</ul>
+			</div>
 		</footer>
 </div>
 		<!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet change the UA-XXXXX-X to be your site's ID -->
