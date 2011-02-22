@@ -236,13 +236,9 @@ h1 {
 
 h2 {
 	font-size: 1.4em;
-	padding: 5px;
-	background: #C5C5C5;
-	max-width: 910px;
-	margin-right: 20px;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
+	background: none;
+	font-weight: bold;
+	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h3 {
@@ -322,7 +318,7 @@ h6 {
 }
 
 #info_links {
-	background-color: #F6D565;
+	background-color: #F2F2F2;
 	padding: 5px 0;
 	margin-right: 20px;
 	margin-bottom: 10px;
@@ -340,8 +336,8 @@ h6 {
 #info_links li a {
 	padding: 10px 10px 4px;
 	font-weight: bold;
-	color: #cccccc;
-	color: rgba(0, 0, 0, 0.7);
+	color: #2B477D;
+	color: rgba(43, 71, 125, 0.7);
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
 	text-decoration: none;
 	-webkit-border-bottom-left-radius: 6px;
@@ -358,13 +354,17 @@ h6 {
 
 #info_links li a:hover,
 #info_links li a:focus {
-	color: #000066;
-	background: rgba(252, 239, 197, 0.6);
+	color: #2B477D;
+	background-color: #cdcdcd;
+	background: rgba(205,205,205, 1);
+	/*background-color: #FCEFC5;
+	background: rgba(252, 239, 197, 0.6);*/
 }
 
 #info_links .selected a {
-	color: #000066;
-	background: rgba(252, 239, 197, 0.6);
+	color: #2B477D;
+	background-color: #cdcdcd;
+	background: rgba(205,205,205, 1;
 }
 
 /* File Type Icon Styling */
@@ -450,14 +450,14 @@ ul#nav_links {
 	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
-	padding-left: 11px;
+	padding-left: 30px;
 }
 
 ul#nav_links li {
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
-	margin: 0 10px 0 0;
+	margin: 0 5px 0 0;
 /*	background-color: #2B477D;
 	border: solid 1px #415F9D; */
 	background-color: #3A5E8C;
@@ -582,6 +582,12 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 	padding-bottom: 10px;
 }
 
+#frontcontent h3 {
+	padding: 10px 5px 0 0;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
 #maincontent p {
 	padding-bottom: 10px;
 }
@@ -610,6 +616,10 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 
 /* Front Page Calendar Styling */
 
+ul#events {
+	padding: 0 10px 10px;
+}
+
 #newsandevents p.eventdate {
 	font-weight: bold;
 	padding: 5px 0;
@@ -621,7 +631,7 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 }
 
 #fullcalendarlink {
-	padding: 10px;
+	padding: 0 10px;
 }
 
 /* Calendar Page Styling */
@@ -722,6 +732,14 @@ table.programsummarytable tbody tr:nth-child(even) {
 	padding-top: 0px;
 }
 
+#generalcontact ul.contactinfofirst {
+	margin-left: 10px;
+}
+
+#generalcontact ul.contactinfolast {
+	margin-left: 0px;
+}
+
 ul.contactinfo {
 	padding: 5px 0;
 }
@@ -778,13 +796,20 @@ ul.contactinfo {
 
 /* Notecard Styling */
 
+li.notecard {
+	color: #000066;
+}
+
 li.notecard h3 {
 /*	font-family: 'Permanent Marker', serif; */
 	font-family: 'Neucha', serif;
 	font-size: 1.4em;
-	color: red;
 	padding-top: 5px;
 	font-weight: bold;	
+}
+
+ul.notecard {
+	overflow: hidden;
 }
 
 li.notecard {
@@ -793,16 +818,22 @@ li.notecard {
 	padding: 0 0 0 5px;
 	width: 205px;
 	height: 205px;
-	border: 1px solid #EFE768;
+	border: 1px solid #2ea39d;
 	position: relative;
 	float: left;
-	background: #EFE768; /* old browsers */
+	/* background colors for old browsers */
+	background: #35beb7; /* post-it samba turquoise */
+	/* background: #EFE768; post-it standard yellow */
+	/* background: faa457; post-it samba orange */
+	/* background: #d189b9;  post-it samba purple */
+	/* background: #f35f6d; post-it samba red */
+	/* background: #cddd73; post-it samba green */
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
 	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 60px rgba(0, 0, 0, 0.1) inset;
 	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
 }
 
-li.notecard li:after { 
+ul.notecard li:after { 
 	z-index: -1; 
 	position: absolute; 
 	background: transparent; 
@@ -819,7 +850,7 @@ li.notecard li:after {
 	-moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-li.notecard li:before { 
+ul.notecard li:before { 
 	z-index: -2; 
 	position: absolute; 
 	background: transparent; 

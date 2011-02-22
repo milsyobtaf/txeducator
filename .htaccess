@@ -1,3 +1,8 @@
+#AuthUserFile .htpasswd
+#AuthName "The Bat Cave"
+#AuthType Basic
+#require user bruce
+
 RewriteEngine On
 RewriteBase /
 
@@ -12,8 +17,8 @@ AddType application/x-httpd-php .html .htm
 AddHandler application/x-httpd-php .html .htm 
 
 # Remove WWW
-RewriteCond %{HTTP_HOST} !^txeducator.local$ [NC]
-RewriteRule ^(.*)$ http://txeducator.local/$1 [L,R=301]
+#RewriteCond %{HTTP_HOST} !^txeducator.local$ [NC]
+#RewriteRule ^(.*)$ http://txeducator.local/$1 [L,R=301]
 
 # Force File Downloads
 AddType application/octet-stream .csv
