@@ -521,6 +521,8 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 /* Sub Navigation Links Fancy */
 
 #subnav_links {
+	min-height: 1em;
+	padding: 5px 10px;
 	background: #d1d1d1;
 	background: -moz-linear-gradient(top center, #f2f2f2, #d1d1d1 80%) repeat scroll 0 0 #d1d1d1;
 	background: -webkit-gradient(linear,left bottom,left top,color-stop(.2, #d1d1d1),color-stop(.8, #f2f2f2));
@@ -533,7 +535,6 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 }
 
 .subnav_links {
-	padding: 5px 10px;
 	height: 100%;
 }
 
@@ -581,7 +582,7 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 	padding-bottom: 10px;
 }
 
-#sontent p {
+#maincontent p {
 	padding-bottom: 10px;
 }
 
@@ -739,6 +740,12 @@ ul.contactinfo {
 #contactpage a {
 	font-size: .8em;
 	padding-bottom: 3px;
+}
+
+/* Newsletter Page Styling */
+
+#newsletterpage {
+	padding: 10px;
 }
 
 /* Discussion Page Styling */
