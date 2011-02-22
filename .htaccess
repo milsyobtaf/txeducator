@@ -3,8 +3,8 @@
 #AuthType Basic
 #require user bruce
 
-RewriteEngine On
-RewriteBase /
+#RewriteEngine On
+#RewriteBase /
 
 # Directory Indexing
 Options Indexes FollowSymLinks
