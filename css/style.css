@@ -608,6 +608,22 @@ ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
 	min-height: 500px;
 }
 
+/* Front Page Calendar Styling */
+
+#newsandevents p.eventdate {
+	font-weight: bold;
+	padding: 5px 0;
+}
+
+#newsandevents p.eventinfo {
+	font-style: italic;
+	padding-left: 5px;
+}
+
+#fullcalendarlink {
+	padding: 10px;
+}
+
 /* Calendar Page Styling */
 
 table.calendartable th {
