@@ -9,6 +9,7 @@
 	<title>Texas Educator Performance Awards: Technical Assistance | www.txeducatorawards.org</title>
 		<link href="css/reset.css" type="text/css" rel="stylesheet" />
 		<link href="css/960.css" type="text/css" rel="stylesheet" />
+		<link href="plugins/jquery/smoothness/jquery-ui.css" type="text/css" rel="stylesheet" />
 		<link href="css/style.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="plugins/jquery/modernizr-1.6.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
@@ -25,6 +26,16 @@
 		});
 	</script>
 	<!-- End optional includes -->
+		<script type="text/javascript" src="plugins/jquery/jquery-ui.min.js"></script>
+		<script>
+		$(function() {
+			$( ".accordion" ).accordion({
+			autoHeight: false,
+			collapsible: true,
+			active: false
+			});
+		});
+	</script>
 </head>
 <body>
 <div id="main_container" class="container_12">
@@ -81,13 +92,13 @@
 				<div class="panel-wrapper">
 					<h2 class="title">Frequently Asked Questions: Program Design</h2>
 					<p class="lesssmalltext"><a href="#1" class="xtrig" rel="coda-slider-1">Back</a></p>
-					<ul>
+					<!--<ul>
 					<!--These anchor tags are uniquely named for their section in the FAQ 
 							PD = Program Design
 							PE = Personnel Eligibility
 							PO = Payout
 							AM = Amendments
-						-->
+						--
 						<li><a href="#pd1">What is the difference in purposes between Part I and Part II of D.A.T.E.?</a></li>
 						<li><a href="#pd2">Can districts allocate more than 60 percent of D.A.T.E. funds to Part I program efforts, or is 60 percent the maximum amount that can be allocated to Part I?</a></li>
 						<li><a href="#pd3">Must a D.A.T.E plan include all schools and all grade levels in a district?</a></li>
@@ -96,38 +107,56 @@
 						<li><a href="#pd6">Can a district use the Texas Performance Measure (TPM) in its plan?</a></li>
 						<li><a href="#pd7">Do teachers in a district or in individual schools applying to participate in D.A.T.E. have to vote on acceptance of the plan?</a></li>
 						<li><a href="#pd8">Is local school board approval of the district award plan required?</a></li>
-					</ul>
-					<h3 id="pd1">What is the difference in purposes between Part I and Part II of D.A.T.E.?</h3>
-					<p>Grant awards to districts are divided into two parts. Part I funds represent a minimum of 60 percent of the total district award. These funds are used to award classroom teachers based on student improvement, growth, and/or achievement. Part II funds represent a maximum of 40 percent of the total district award. These funds can be used for stipends and awards for:</p>
-					<ol>
-						<li>the recruitment and retention of teachers in critical shortage subject areas, in subject areas with high percentages of out-of-field assignments, certified and teaching in their main subject area and/or with postgraduate degrees in their teaching areas;</li>
-						<li>career, mentor, and master teachers;</li>
-						<li>on-going applied professional growth – To re-examine and restructure a campus school schedule to provide time during the regular school day for teachers to collaborate, receive professional development and learn new instructional strategies to become more effective teachers;</li>
-						<li>increasing local data capabilities to support instruction and accountability – To enable districts to design, develop, and implement data systems to efficiently and accurately manage, analyze, disaggregate, and use individual student to teacher data. An improved data system should assist a district in generating and using accurate and timely data to meet reporting requirements; support decision-making at the district, campus, and classroom levels; and facilitate research needed to eliminate achievement gaps and improve learning of all students;</li>
-						<li>awards for administrators who increase student performance; and</li>
-						<li>other campus employees based on appropriate criteria</li>
-					</ol>
-					<h3 id="pd2">Can districts allocate more than 60 percent of D.A.T.E. funds to Part I program efforts, or is 60 percent the maximum amount that can be allocated to Part I?</h3>
-					<p>The 60 percent is a minimum. A district can allocate 100% of funds to Part I if they wish. A district cannot allocate more than 40% to Part II funds, however.</p>
-					<h3 id="pd3">Must a D.A.T.E plan include all schools and all grade levels in a district?</h3>
-					<p>No, a district can choose selected campuses and grade levels to include within their plan. Based on district goals, a district may choose to structure their D.A.T.E. plans around certain subject areas, grade levels, or schools where the district is struggling.  If a district chooses to implement a selected campuses plan, more than half of the campuses selected must be target campuses.  Please refer to the program requirements for target campuses criteria.</p>
-					<h3 id="pd4">If we target schools, do the schools included in the district award plan have to stay the same for two years? Can we "retarget" according to need?</h3>
-					<p>No. You can retarget – the requirements state that you would target the same type of schools but not necessarily the same schools. </p>
-					<h3 id="pd5">Can we award teachers based on campus ratings?</h3>
-					<p>Yes, districts can award teachers based on campus rating only under Part II funds.</p>
-					<h3 id="pd6">Can a district use the Texas Performance Measure (TPM) in its plan?</h3>
-					<p>Although TEA strongly discourages the use of the TPM, if you believe the accountability ratings as influenced by TPM are the fairest and most accurate way of providing awards to your staff, the agency will allow its usage. This is a district decision.</p>
-					<h3 id="pd7">Do teachers in a district or in individual schools applying to participate in D.A.T.E. have to vote on acceptance of the plan?</h3>
-					<p>If a district plans to implement their program district-wide, then a vote on participation and approval of the plan is not required. If a district plans to implement their program within selected campuses, a simple majority through a campus wide vote is required from the campuses chosen to participate in the program.Although TEA does not require districts to obtain a vote of acceptance of a plan from teachers and administrators, it is recommended that districts do in fact take a vote and obtain feedback in order to gain support and buy-in.</p>
-					<h3 id="pd8">Is local school board approval of the district award plan required?</h3>
-					<p>Local school board approval of the district award plan is not required, but strongly encouraged.</p>					
+					</ul>-->
+					<div class="accordion">
+					<h4 id="pd1"><a href="#">What is the difference in purposes between Part I and Part II of D.A.T.E.?</a></a></h4>
+					<div>
+						<p>Grant awards to districts are divided into two parts. Part I funds represent a minimum of 60 percent of the total district award. These funds are used to award classroom teachers based on student improvement, growth, and/or achievement. Part II funds represent a maximum of 40 percent of the total district award. These funds can be used for stipends and awards for:</p>
+						<ol>
+							<li>the recruitment and retention of teachers in critical shortage subject areas, in subject areas with high percentages of out-of-field assignments, certified and teaching in their main subject area and/or with postgraduate degrees in their teaching areas;</li>
+							<li>career, mentor, and master teachers;</li>
+							<li>on-going applied professional growth – To re-examine and restructure a campus school schedule to provide time during the regular school day for teachers to collaborate, receive professional development and learn new instructional strategies to become more effective teachers;</li>
+							<li>increasing local data capabilities to support instruction and accountability – To enable districts to design, develop, and implement data systems to efficiently and accurately manage, analyze, disaggregate, and use individual student to teacher data. An improved data system should assist a district in generating and using accurate and timely data to meet reporting requirements; support decision-making at the district, campus, and classroom levels; and facilitate research needed to eliminate achievement gaps and improve learning of all students;</li>
+							<li>awards for administrators who increase student performance; and</li>
+							<li>other campus employees based on appropriate criteria</li>
+						</ol>
+					</div>
+					<h4 id="pd2"><a href="#">Can districts allocate more than 60 percent of D.A.T.E. funds to Part I program efforts, or is 60 percent the maximum amount that can be allocated to Part I?</a></a></h4>
+					<div>
+						<p>The 60 percent is a minimum. A district can allocate 100% of funds to Part I if they wish. A district cannot allocate more than 40% to Part II funds, however.</p>	
+					</div>
+					<h4 id="pd3"><a href="#">Must a D.A.T.E plan include all schools and all grade levels in a district?</a></a></h4>
+					<div>
+						<p>No, a district can choose selected campuses and grade levels to include within their plan. Based on district goals, a district may choose to structure their D.A.T.E. plans around certain subject areas, grade levels, or schools where the district is struggling.  If a district chooses to implement a selected campuses plan, more than half of the campuses selected must be target campuses.  Please refer to the program requirements for target campuses criteria.</p>
+					</div>
+					<h4 id="pd4"><a href="#">If we target schools, do the schools included in the district award plan have to stay the same for two years? Can we "retarget" according to need?</a></a></h4>
+					<div>
+						<p>No. You can retarget – the requirements state that you would target the same type of schools but not necessarily the same schools. </p>
+					</div>
+					<h4 id="pd5"><a href="#">Can we award teachers based on campus ratings?</a></a></h4>
+					<div>
+						<p>Yes, districts can award teachers based on campus rating only under Part II funds.</p>
+					</div>
+					<h4 id="pd6"><a href="#">Can a district use the Texas Performance Measure (TPM) in its plan?</a></a></h4>
+					<div>
+						<p>Although TEA strongly discourages the use of the TPM, if you believe the accountability ratings as influenced by TPM are the fairest and most accurate way of providing awards to your staff, the agency will allow its usage. This is a district decision.</p>
+					</div>
+					<h4 id="pd7"><a href="#">Do teachers in a district or in individual schools applying to participate in D.A.T.E. have to vote on acceptance of the plan?</a></a></h4>
+					<div>
+						<p>If a district plans to implement their program district-wide, then a vote on participation and approval of the plan is not required. If a district plans to implement their program within selected campuses, a simple majority through a campus wide vote is required from the campuses chosen to participate in the program.Although TEA does not require districts to obtain a vote of acceptance of a plan from teachers and administrators, it is recommended that districts do in fact take a vote and obtain feedback in order to gain support and buy-in.</p>
+					</div>
+					<h4 id="pd8"><a href="#">Is local school board approval of the district award plan required?</a></a></h4>
+					<div>
+						<p>Local school board approval of the district award plan is not required, but strongly encouraged.</p>
+					</div>
+				</div>
 				</div>
 			</div>
 			<div class="panel">
 				<div class="panel-wrapper">
 					<h2 class="title">Frequently Asked Questions: Personnel Eligibility</h2>
 					<p class="lesssmalltext"><a href="#1" class="xtrig" rel="coda-slider-1">Back</a></p>
-					<ul>
+					<!--<ul>
 						<li><a href="#pe1">What is a classroom teacher, for purposes of Part I funds of D.A.T.E.?</a></li>
 						<li><a href="#pe2">For purposes of this grant, does the definition of classroom teacher include permanent substitutes?</a></li>
 						<li><a href="#pe3">Are halftime teachers eligible for funding, like those assigned to career and tech settings?</a></li>
@@ -135,65 +164,97 @@
 						<li><a href="#pe5">Are principals and other administrators eligible for D.A.T.E. awards?</a></li>
 						<li><a href="#pe6">May districts withhold awards from teachers who meet performance objectives, but who leave their school at the end of the school year in order to motivate teachers to remain on the campus?</a></li>
 						<li><a href="#pe7">Can part-time or full-time instructional aides receive award payments?</a></li>
-					</ul>
-					<h3 id="pe1">What is a classroom teacher, for purposes of Part I funds of D.A.T.E.?</h3>
-					<p>The Texas Education Code defines a classroom teacher as “an educator who is employed by a school district and who, not less than an average of four hours each day, teaches in an academic instructional setting or a career and technology setting. The term does not include a teacher’s aide or a full-time administrator.” T.E.C. 5.001</p>
-					<h3 id="pe2">For purposes of this grant, does the definition of classroom teacher include permanent substitutes?</h3>
-					<p>Part I funds of the grant applies to teachers that meet the classroom teacher definition, as defined in the TEC, §5.001(2). According to this definition, a substitute teacher is not considered as a school district employee employed under contract. The school district is not mandated by law to place a substitute on the minimum salary schedule (the district pays the sub's pay), and the substitute is not mandated by law to be given the 5 state days per year that are given to school district employees. Therefore, under this definition, a substitute teacher does not fall under the classroom teacher definition. Including full-time substitute teachers in Part II funds will be at the discretion of the school district.</p>
-					<h3 id="pe3">Are halftime teachers eligible for funding, like those assigned to career and tech settings?</h3>
-					<p>As long as the teachers meet the definition of a classroom teacher as defined in TEC 5.001 and are able to meet the performance criteria, they may be awarded under Part I.Please note that decisions to include or not include certain teachers are made at the discretion of the eligible district.</p>
-					<h3 id="pe4">Can districts choose to award funds to teachers who are retiring?</h3>
-					<p>As long as the teachers meet the definition of a classroom teacher and are able to meet the performance criteria, Cycle 1 districts have the choice as whether or not retired teachers may be awarded under Part I. They must work the full year. Districts should make clear in their eligibility criteria whether or not a teacher who retires at the end of the year may receive an award. Cycle 2 districts cannot exclude retiring teachers.</p>
-					<h3 id="pe5">Are principals and other administrators eligible for D.A.T.E. awards?</h3>
-					<p>Yes. Principals may be awarded under Part I and Part II. All other administrators, including assistant principals, may be awarded under Part II.</p>
-					<h3 id="pe6">May districts withhold awards from teachers who meet performance objectives, but who leave their school at the end of the school year in order to motivate teachers to remain on the campus?</h3>
-					<p>Yes. Applicants who choose to do this must specify this stipulation clearly in the program narrative of their applications and ensure that this stipulation is included in the public presentation of the plan. Please consult with your local legal counsel to develop appropriate requirements. Districts may also choose to specify separate awards for returning teachers under the optional teacher initiative and commitment criterion in Part I. This award would be provided to teachers who meet the required performance criteria in Part I and also return to the campus the following year. Teachers who meet required criteria but do not return would receive the awards for meeting those criteria, but not the </p>
-					<h3 id="pe7">Can part-time or full-time instructional aides receive award payments?</h3>
-					<p>Yes. Part II funds allow awards to be given to other campus personnel who demonstrate excellence.  Districts can make the decision at a local level to include the personnel they feel help with student improvement, growth, and achievement including instructional aides.</p>
+					</ul>-->
+					<div class="accordion">
+					<h4 id="pe1"><a href="#">What is a classroom teacher, for purposes of Part I funds of D.A.T.E.?</a></h4>
+					<div>
+						<p>The Texas Education Code defines a classroom teacher as “an educator who is employed by a school district and who, not less than an average of four hours each day, teaches in an academic instructional setting or a career and technology setting. The term does not include a teacher’s aide or a full-time administrator.” T.E.C. 5.001</p>
+					</div>
+					<h4 id="pe2"><a href="#">For purposes of this grant, does the definition of classroom teacher include permanent substitutes?</a></h4>
+					<div>
+						<p>Part I funds of the grant applies to teachers that meet the classroom teacher definition, as defined in the TEC, §5.001(2). According to this definition, a substitute teacher is not considered as a school district employee employed under contract. The school district is not mandated by law to place a substitute on the minimum salary schedule (the district pays the sub's pay), and the substitute is not mandated by law to be given the 5 state days per year that are given to school district employees. Therefore, under this definition, a substitute teacher does not fall under the classroom teacher definition. Including full-time substitute teachers in Part II funds will be at the discretion of the school district.</p>
+					</div>
+					<h4 id="pe3"><a href="#">Are halftime teachers eligible for funding, like those assigned to career and tech settings?</a></h4>
+					<div>
+						<p>As long as the teachers meet the definition of a classroom teacher as defined in TEC 5.001 and are able to meet the performance criteria, they may be awarded under Part I.Please note that decisions to include or not include certain teachers are made at the discretion of the eligible district.</p>
+					</div>
+					<h4 id="pe4"><a href="#">Can districts choose to award funds to teachers who are retiring?</a></h4>
+					<div>
+						<p>As long as the teachers meet the definition of a classroom teacher and are able to meet the performance criteria, Cycle 1 districts have the choice as whether or not retired teachers may be awarded under Part I. They must work the full year. Districts should make clear in their eligibility criteria whether or not a teacher who retires at the end of the year may receive an award. Cycle 2 districts cannot exclude retiring teachers.</p>
+					</div>
+					<h4 id="pe5"><a href="#">Are principals and other administrators eligible for D.A.T.E. awards?</a></h4>
+					<div>
+						<p>Yes. Principals may be awarded under Part I and Part II. All other administrators, including assistant principals, may be awarded under Part II.</p>
+					</div>
+					<h4 id="pe6"><a href="#">May districts withhold awards from teachers who meet performance objectives, but who leave their school at the end of the school year in order to motivate teachers to remain on the campus?</a></h4>
+					<div>
+						<p>Yes. Applicants who choose to do this must specify this stipulation clearly in the program narrative of their applications and ensure that this stipulation is included in the public presentation of the plan. Please consult with your local legal counsel to develop appropriate requirements. Districts may also choose to specify separate awards for returning teachers under the optional teacher initiative and commitment criterion in Part I. This award would be provided to teachers who meet the required performance criteria in Part I and also return to the campus the following year. Teachers who meet required criteria but do not return would receive the awards for meeting those criteria, but not the </p>
+					</div>
+					<h4 id="pe7"><a href="#">Can part-time or full-time instructional aides receive award payments?</a></h4>
+					<div>
+						<p>Yes. Part II funds allow awards to be given to other campus personnel who demonstrate excellence.  Districts can make the decision at a local level to include the personnel they feel help with student improvement, growth, and achievement including instructional aides.</p>
+					</div>
+				</div>
 				</div>
 			</div>
 			<div class="panel">
 				<div class="panel-wrapper">
 					<h2 class="title">Frequently Asked Questions: Payout</h2>
 					<p class="lesssmalltext"><a href="#1" class="xtrig" rel="coda-slider-1">Back</a></p>
-					<ul>
+					<!--<ul>
 						<li><a href="#po1">If approved, when will D.A.T.E. award funds be supplied to my district?</a>
 						<li><a href="#po2">Does the district need to pay into the Teacher Retirement System (TRS) for awards to campus personnel?</a>
 						<li><a href="#po3">Are districts required to pay health, social security, or other benefits on award payments (question not referring to TRS)?</a>
 						<li><a href="#po4">What are allowable administrative costs?</a>
-					</ul>
-					<h3 id="po1">If approved, when will D.A.T.E. award funds be supplied to my district?</h3>
-					<p>Part II funds can be drawn down from the date ofnotice of grant award (NOGA) to the end of the grant period, excluding funds for awards to teachers or other district staff.  The districts can draw down funds from Part I and Part II for awards to teachers or other district staff between May 15, 2010 through November 1, 2010. Part I payouts afterwards will require an extension from TEA.</p>
-					<h3 id="po1">Does the district need to pay into the Teacher Retirement System (TRS) for awards to campus personnel?</h3>
-					<p>Yes, districts must pay into TRS for awards to campus personnel.  “Compensation paid under the awards for Student Achievement Program under Subchapter N, Chapter 21, Education Code and the Educator Excellence Awards Program under Subchapter O, Chapter 21, Education Code are eligible compensation for TRS purposes.  Accordingly, compensation for service paid pursuant to award programs initiated beginning with the 2006-2007 school year under the authority of either Subchapter N or O of Chapter 21 of the Education Code, is eligible compensation for TRS purposes and must be reported to TRS and member contributions withheld”  (TRS representative).D.A.T.E. awards given as a performance bonus are subject to TRS reporting, but money paid out as a sign-on bonus is not. For any questions on this matter, please refer to the <a href="">TRAQS Payroll Reporting Manual</a> or email: <a href="">reporting@trs.state.tx.us</a>.</p>
-					<h3 id="po1">Are districts required to pay health, social security, or other benefits on award payments (question not referring to TRS)?</h3>
-					<p>Because employee benefits programs have different requirements and are administered through different agencies and organizations, there is no single answer to this question. Please consult with your legal counsel, business officer, or the appropriate agency or organization. The benefits may be paid with D.A.T.E. funds. However, this will reduce the award amounts to teachers and other staff.  Districts may supplement the grant with other funds to pay for these benefits.</p>
-					<h3 id="po1">What are allowable administrative costs?</h3>
-					<p>Direct administrative costs may include those associated with accounting and other fiscal activities, auditing, and overall program administration. Direct administrative costs also include salaries and benefits for staff who supervise activities of program staff and insurance that protects your organization.  Administrative cost allocations may not exceed 5% of the total grant award and must come out of Part II funds.</p>
+					</ul>-->
+					<div class="accordion">
+					<h4 id="po1"><a href="#">If approved, when will D.A.T.E. award funds be supplied to my district?</a></h4>
+					<div>
+						<p>Part II funds can be drawn down from the date ofnotice of grant award (NOGA) to the end of the grant period, excluding funds for awards to teachers or other district staff.  The districts can draw down funds from Part I and Part II for awards to teachers or other district staff between May 15, 2010 through November 1, 2010. Part I payouts afterwards will require an extension from TEA.</p>
+					</div>
+					<h4 id="po2"><a href="#">Does the district need to pay into the Teacher Retirement System (TRS) for awards to campus personnel?</a></h4>
+					<div>
+						<p>Yes, districts must pay into TRS for awards to campus personnel.  “Compensation paid under the awards for Student Achievement Program under Subchapter N, Chapter 21, Education Code and the Educator Excellence Awards Program under Subchapter O, Chapter 21, Education Code are eligible compensation for TRS purposes.  Accordingly, compensation for service paid pursuant to award programs initiated beginning with the 2006-2007 school year under the authority of either Subchapter N or O of Chapter 21 of the Education Code, is eligible compensation for TRS purposes and must be reported to TRS and member contributions withheld”  (TRS representative).D.A.T.E. awards given as a performance bonus are subject to TRS reporting, but money paid out as a sign-on bonus is not. For any questions on this matter, please refer to the <a href="">TRAQS Payroll Reporting Manual</a> or email: <a href="">reporting@trs.state.tx.us</a>.</p>
+					</div>
+					<h4 id="po3"><a href="#">Are districts required to pay health, social security, or other benefits on award payments (question not referring to TRS)?</a></h4>
+					<div>
+						<p>Because employee benefits programs have different requirements and are administered through different agencies and organizations, there is no single answer to this question. Please consult with your legal counsel, business officer, or the appropriate agency or organization. The benefits may be paid with D.A.T.E. funds. However, this will reduce the award amounts to teachers and other staff.  Districts may supplement the grant with other funds to pay for these benefits.</p>
+					</div>
+					<h4 id="po4"><a href="#">What are allowable administrative costs?</a></h4>
+					<div>
+						<p>Direct administrative costs may include those associated with accounting and other fiscal activities, auditing, and overall program administration. Direct administrative costs also include salaries and benefits for staff who supervise activities of program staff and insurance that protects your organization.  Administrative cost allocations may not exceed 5% of the total grant award and must come out of Part II funds.</p>
+					</div>
+				</div>
 				</div>
 			</div>
 			<div class="panel">
 				<div class="panel-wrapper">
 					<h2 class="title">Frequently Asked Questions: Amendments</h2>
 					<p class="lesssmalltext"><a href="#1" class="xtrig" rel="coda-slider-1">Back</a></p>
-					<ul>
+					<!--<ul>
 						<li><a href="#am1">How do I know if my district should submit an amendment?</a></li>
 						<li><a href="#am2">Is there a difference between programmatic amendments and budget amendments?</a></li>
-					</ul>
-					<h3 id="am1">How do I know if my district should submit an amendment?</h3>
-					<p>For all grants, <span class="underline">regardless of the dollar amount</span>, an amendment is required to make changes such as:</p>
-					<ol>
-						<li>adding a class/object code not previously budgeted on the Program Budget Summary schedule;</li>
-						<li>increasing or decreasing the amount approved in any class/object code (i.e., 6100-6600) on Schedule #5—Program Budget Summary by more than 25% of the current amount approved in the class/object code;</li>
-						<li>adding a new line item on any of the supporting budget schedules (i.e., Schedules 5B-5G);</li>
-						<li>increasing or decreasing the number of positions approved on the Payroll Costs (Schedule 5B);</li>
-						<li>reducing funds allotted for training costs (where such costs are direct payments/reimbursements to trainees, primarily travel and lodging for trainees, workshop/conference registration fees, tuition, books, and related fees);</li>
-						<li>revising the scope (i.e., extent or range) or objectives of the grant</li>
-					</ol>
-					<p>For further instructions, please refer to the Request for Application and review schedule 3A located on pages four and five of the D.A.T.E. grant application.  These pages list specific information regarding amendment requirements.</p>
-					<h3 id="am2">Is there a difference between programmatic amendments and budget amendments?</h3>
-					<p>Yes. Programmatic amendments are changes such as:  increasing or decreasing the number of staff positions, changes in performance measure criteria (e.g. changes to student achievement rate measures, changes to objectives, etc).</p>
-					<p>Budget amendments are changes which affect the way in which grant funds are utilized, such as: increasing or decreasing the amount approved in any class/object, reducing funds allotted for training costs to increase award amounts for Part II, or implementing the contingency plan that requires moving funds for professional development, etc.</p>
+					</ul>-->
+					<div class="accordion">
+					<h4 id="am1"><a href="#">How do I know if my district should submit an amendment?</a></h4>
+					<div>
+						<p>For all grants, <span class="underline">regardless of the dollar amount</span>, an amendment is required to make changes such as:</p>
+						<ol>
+							<li>adding a class/object code not previously budgeted on the Program Budget Summary schedule;</li>
+							<li>increasing or decreasing the amount approved in any class/object code (i.e., 6100-6600) on Schedule #5—Program Budget Summary by more than 25% of the current amount approved in the class/object code;</li>
+							<li>adding a new line item on any of the supporting budget schedules (i.e., Schedules 5B-5G);</li>
+							<li>increasing or decreasing the number of positions approved on the Payroll Costs (Schedule 5B);</li>
+							<li>reducing funds allotted for training costs (where such costs are direct payments/reimbursements to trainees, primarily travel and lodging for trainees, workshop/conference registration fees, tuition, books, and related fees);</li>
+							<li>revising the scope (i.e., extent or range) or objectives of the grant</li>
+						</ol>
+						<p>For further instructions, please refer to the Request for Application and review schedule 3A located on pages four and five of the D.A.T.E. grant application.  These pages list specific information regarding amendment requirements.</p>
+					</div>
+					<h4 id="am2"><a href="#">Is there a difference between programmatic amendments and budget amendments?</a></h4>
+					<div>
+						<p>Yes. Programmatic amendments are changes such as:  increasing or decreasing the number of staff positions, changes in performance measure criteria (e.g. changes to student achievement rate measures, changes to objectives, etc).</p>
+						<p>Budget amendments are changes which affect the way in which grant funds are utilized, such as: increasing or decreasing the amount approved in any class/object, reducing funds allotted for training costs to increase award amounts for Part II, or implementing the contingency plan that requires moving funds for professional development, etc.</p>
+					</div>
+				</div>
 				</div>
 			</div>
 		</div><!-- .coda-slider -->
