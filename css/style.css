@@ -176,6 +176,10 @@ body {
 	display: inline;
 }
 
+.list_none li {
+	list-style-type: none !important;
+}
+
 .list_disc {
 	list-style-type: disc;
 }
