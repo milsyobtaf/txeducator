@@ -461,10 +461,6 @@ ul#nav_links li {
 	-moz-border-radius: 6px;
 	border-radius: 6px;
 	margin: 0 5px 0 0;
-/*	background-color: #2B477D;
-	border: solid 1px #415F9D; */
-	background-color: #3A5E8C;
-	border: solid 1px #3A5E8C;	
 	position: relative;
 	z-index: 1;
 }
@@ -487,6 +483,10 @@ ul#nav_links li.shadow {
 	box-shadow: #111 0 -2px 6px;
 }
 
+ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
+	color: #fff;
+}
+
 ul#nav_links li a:link, ul#nav_links li a:visited {
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -498,27 +498,148 @@ ul#nav_links li a:link, ul#nav_links li a:visited {
 	line-height: 25px;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #fff;
 	letter-spacing: 1px;
 	outline: none;
 	float: left;
-	background: #2B477D;
 	-webkit-transition: background-color 0.3s linear;
 	-moz-transition: background-color 0.3s linear;
 	-o-transition: background-color 0.3s linear;
 	font-weight: bold;
+	color: #fff;
 }
 
-ul#nav_links li a:hover {
+/* Primary Nav Links Tab Colors */
+
+/* Red Tab */
+
+ul#nav_links li.redtab {
+	background-color: #3A5E8C;
+	border: solid 1px #3A5E8C;
+}
+
+ul#nav_links li.redtab a:link, ul#nav_links li.redtab a:visited {
+	background: #2B477D;
+}
+
+ul#nav_links li.redtab a:hover {
 	background-color: #5a87dd;
 }
 
-ul#nav_links li.selected a:link, ul#nav_links li.selected a:visited {
-	color: #2B477D;
+ul#nav_links li.selected.redtab a:link, ul#nav_links li.selected.redtab a:visited {
 	border: solid 1px #fff;
 	-webkit-transition: background-color 0.2s linear;
-	background: #F2F2F2;
-	background-color: #f2f2f2;
+	background: red;
+	background-color: red;
+}
+
+/* Orange Tab */
+
+ul#nav_links li.orangetab {
+	background-color: #3A5E8C;
+	border: solid 1px #3A5E8C;
+}
+
+ul#nav_links li.orangetab a:link, ul#nav_links li.orangetab a:visited {
+	background: #2B477D;
+}
+
+ul#nav_links li.orangetab a:hover {
+	background-color: #5a87dd;
+}
+
+ul#nav_links li.selected.orangetab a:link, ul#nav_links li.selected.orangetab a:visited {
+	border: solid 1px #fff;
+	-webkit-transition: background-color 0.2s linear;
+	background: orange;
+	background-color: orange;
+}
+
+/* Blue Tab */
+
+ul#nav_links li.bluetab {
+	background-color: #3A5E8C;
+	border: solid 1px #3A5E8C;
+}
+
+ul#nav_links li.bluetab a:link, ul#nav_links li.bluetab a:visited {
+	background: #2B477D;
+}
+
+ul#nav_links li.bluetab a:hover {
+	background-color: #5a87dd;
+}
+
+ul#nav_links li.selected.bluetab a:link, ul#nav_links li.selected.bluetab a:visited {
+	border: solid 1px #fff;
+	-webkit-transition: background-color 0.2s linear;
+	background: blue;
+	background-color: blue;
+}
+
+/* Teal Tab */
+
+ul#nav_links li.tealtab {
+	background-color: #3A5E8C;
+	border: solid 1px #3A5E8C;
+}
+
+ul#nav_links li.tealtab a:link, ul#nav_links li.tealtab a:visited {
+	background: #2B477D;
+}
+
+ul#nav_links li.tealtab a:hover {
+	background-color: #5a87dd;
+}
+
+ul#nav_links li.selected.tealtab a:link, ul#nav_links li.selected.tealtab a:visited {
+	border: solid 1px #fff;
+	-webkit-transition: background-color 0.2s linear;
+	background: teal;
+	background-color: teal;
+}
+
+/* Green Tab */
+
+ul#nav_links li.greentab {
+	background-color: #3A5E8C;
+	border: solid 1px #3A5E8C;
+}
+
+ul#nav_links li.greentab a:link, ul#nav_links li.greentab a:visited {
+	background: #2B477D;
+}
+
+ul#nav_links li.greentab a:hover {
+	background-color: #5a87dd;
+}
+
+ul#nav_links li.selected.greentab a:link, ul#nav_links li.selected.greentab a:visited {
+	border: solid 1px #fff;
+	-webkit-transition: background-color 0.2s linear;
+	background: green;
+	background-color: green;
+}
+
+/* Purple Tab */
+
+ul#nav_links li.purpletab {
+	background-color: #3A5E8C;
+	border: solid 1px #3A5E8C;
+}
+
+ul#nav_links li.purpletab a:link, ul#nav_links li.purpletab a:visited {
+	background: #2B477D;
+}
+
+ul#nav_links li.purpletab a:hover {
+	background-color: #5a87dd;
+}
+
+ul#nav_links li.selected.purpletab a:link, ul#nav_links li.selected.purpletab a:visited {
+	border: solid 1px #fff;
+	-webkit-transition: background-color 0.2s linear;
+	background: purple;
+	background-color: purple;
 }
 
 /* Sub Navigation Links Fancy */
