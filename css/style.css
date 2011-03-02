@@ -644,7 +644,7 @@ ul#nav_links li.selected.purpletab a:link, ul#nav_links li.selected.purpletab a:
 #subnav_links {
 	min-height: 1em;
 	padding: 5px 10px;
-	background: #d1d1d1;
+	background: #f2f2f2;
 	background: -moz-linear-gradient(top center, #f2f2f2, #d1d1d1 80%) repeat scroll 0 0 #d1d1d1;
 	background: -webkit-gradient(linear,left bottom,left top,color-stop(.2, #d1d1d1),color-stop(.8, #f2f2f2));
 	-webkit-border-bottom-right-radius: 6px;
