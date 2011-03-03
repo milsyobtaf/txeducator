@@ -986,74 +986,70 @@ ul.contactinfo {
 }
 
 /* Notecard Styling */
+/* background: #35beb7; post-it samba turquoise */
+/* background: #EFE768; post-it standard yellow */
+/* background: faa457; post-it samba orange */
+/* background: #d189b9;  post-it samba purple */
+/* background: #f35f6d; post-it samba red */
+/* background: #cddd73; post-it samba green */
 
-li.notecard {
-	color: #000066;
-}
-
-li.notecard h3 {
-/*	font-family: 'Permanent Marker', serif; */
+.notecard h3 {
 	font-family: 'Neucha', serif;
 	font-size: 1.4em;
 	padding-top: 5px;
 	font-weight: bold;	
 }
 
-ul.notecard {
+ul.binder {
 	overflow: hidden;
 }
 
-li.notecard {
+ul.binder > li {
+	color: #000066;
 	margin: 0 30px 15px 0;
 	list-style-type: none;
 	padding: 0 0 0 5px;
 	width: 205px;
 	height: 205px;
-	border: 1px solid #2ea39d;
+	border: 1px solid #31b1aa;
 	position: relative;
 	float: left;
-	/* background colors for old browsers */
-	background: #35beb7; /* post-it samba turquoise */
-	/* background: #EFE768; post-it standard yellow */
-	/* background: faa457; post-it samba orange */
-	/* background: #d189b9;  post-it samba purple */
-	/* background: #f35f6d; post-it samba red */
-	/* background: #cddd73; post-it samba green */
+	background: none repeat scroll 0 0 #35BEB7;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
 	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 60px rgba(0, 0, 0, 0.1) inset;
 	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
 }
 
-ul.notecard li:after { 
-	z-index: -1; 
-	position: absolute; 
-	background: transparent; 
-	width: 70%; 
-	height: 55%; 
-	content: ''; 
-	right: 10px; 
-	bottom: 10px; 
+ul.binder > li:after {
+	z-index: -1;
+	position: absolute;
+	background: transparent;
+	width: 70%;
+	height: 55%;
+	content: '';
+	right: 10px;
+	bottom: 10px;
 	transform: skew(15deg) rotate(6deg);
 	-webkit-transform: skew(15deg) rotate(6deg);
 	-moz-transform: skew(15deg) rotate(6deg);
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
-	-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-ul.notecard li:before { 
-	z-index: -2; 
-	position: absolute; 
-	background: transparent; 
-	width: 70%; 
-	height: 55%; 
-	content: ''; 
-	left: 10px; 
-	bottom: 10px; 
-	transform: skew(-15deg) rotate(-6deg); 
-	-webkit-transform: skew(-15deg) rotate(-6deg); 
-	-moz-transform: skew(-15deg) rotate(-6deg); 
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
-	-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+ul.binder > li:before { 
+	z-index: -2;
+	position: absolute;
+	background: transparent;
+	width: 70%;
+	height: 55%;
+	content: '';
+	left: 10px;
+	bottom: 10px;
+	transform: skew(-15deg) rotate(-6deg);
+	-webkit-transform: skew(-15deg) rotate(-6deg);
+	-moz-transform: skew(-15deg) rotate(-6deg);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
