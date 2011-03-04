@@ -19,7 +19,7 @@ body {
 /* Background Color Classes */
 
 .blue { 
-	background-color: #2382a1; 
+	background-color: #8DBDD8; 
 }
 .green { 
 	background-color: #4be22d; 
@@ -28,7 +28,7 @@ body {
 	background-color: #ff009d; 
 }
 .yellow {
-	background-color: yellow;
+	background-color: #F6D565 !important;
 }
 .gray {
 	background-color: gray;
@@ -409,6 +409,18 @@ a[href^="mailto:"] {
 	display:inline-block;
 	padding-right:25px;
 	line-height:20px;
+}
+
+a[href$='.pdf'].newsbg {
+	background:transparent url(../images/icons/news.png) center right no-repeat;
+	display:inline-block;
+	padding-right:15px;
+	height:120px;
+	width: 128px;
+	font-weight: bold;
+	font-size: 1.4em;
+	text-decoration: none;
+	color: #3A5E8C;
 }
 
 /* End File Type Icon Styling */
