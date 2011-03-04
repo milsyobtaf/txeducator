@@ -875,6 +875,26 @@ table.programsummarytable tbody tr:nth-child(even) {
 	background-color: #cdcdcd;
 }
 
+table.performancemeasurestable {
+	border: 1px solid #000;
+}
+
+table.performancemeasurestable th {
+	background-color: #F6D565;
+	padding: 5px 10px;
+	border: 1px solid #000;	
+	vertical-align: middle;
+}
+
+table.performancemeasurestable td {
+	padding: 10px;
+	border: 1px solid #000;
+}
+
+table.performancemeasurestable th:first-child {
+	width: 150px;
+}
+
 .navtable {
 	padding: 20px 0px;
 }
