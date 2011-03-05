@@ -423,6 +423,10 @@ a[href$='.pdf'].newsbg {
 	color: #3A5E8C;
 }
 
+a[href$='.pdf'].nobg {
+	background: none;
+}
+
 /* End File Type Icon Styling */
 
 /* Footer Styles */
