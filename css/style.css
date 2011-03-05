@@ -718,9 +718,15 @@ ul#nav_links li.selected.purpletab a:link, ul#nav_links li.selected.purpletab a:
 }
 
 #frontcontent h3 {
-	padding: 10px 5px 0 0;
+	padding: 5px 10px;
+	line-height: 3em;
 	font-size: 1.1em;
 	font-weight: bold;
+	background-color: #F6D565;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	display: inline;
 }
 
 #maincontent p {
