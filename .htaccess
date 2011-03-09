@@ -4,7 +4,14 @@ AddHandler application/x-httpd-php .html .htm
 
 ErrorDocument 404 /404.html
 
-#RewriteEngine On
+#Options +FollowSymLinks
+RewriteEngine On
+#RewriteBase /
+
+#Force WWW
+#RewriteCond %{REQUEST_URI} !^/robots\.txt$
+#RewriteCond %{HTTP_HOST} !^www\.txeducatorawards\.org$ [NC]
+#RewriteRule ^(.*)$ http://www.txeducatorawards.org/$1 [R=301,L]
 
 #Rewrite 301 /abouttech.html http://txeducatorawards.org/overview.html#1
 #Rewrite 301 /aboutdate.html /overview.html#2
