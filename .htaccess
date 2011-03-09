@@ -1,24 +1,33 @@
-#AuthUserFile .htpasswd
-#AuthName "The Bat Cave"
-#AuthType Basic
-#require user bruce
-
-#RewriteEngine On
-#RewriteBase /
-
-# Directory Indexing
-Options Indexes FollowSymLinks
-IndexOptions FancyIndexing
-IndexOptions FoldersFirst
-IndexOptions NameWidth=*
-
 # Allow PHP in HTML files
 AddType application/x-httpd-php .html .htm
-AddHandler application/x-httpd-php .html .htm 
+AddHandler application/x-httpd-php .html .htm
 
-# Remove WWW
-#RewriteCond %{HTTP_HOST} !^txeducator.local$ [NC]
-#RewriteRule ^(.*)$ http://txeducator.local/$1 [L,R=301]
+ErrorDocument 404 /404.html
+
+#RewriteEngine On
+
+#Rewrite 301 /abouttech.html http://txeducatorawards.org/overview.html#1
+#Rewrite 301 /aboutdate.html /overview.html#2
+#Rewrite 301 /abouttap.html /overview.html#3
+#Rewrite 301 /calendar.html
+#Rewrite 301 /workshops.html /calendar.html#2
+#Rewrite 301 /cycleone.html /calendar.html#3
+#Rewrite 301 /cycletwo.html /calendar.html#4
+#Rewrite 301 /materials.html /tools.html#2
+#Rewrite 301 /implementation.html /tools.html#3
+#Rewrite 301 /design.html /tools.html#4
+#Rewrite 301 /payout.html /tools.html#5
+#Rewrite 301 /data.html /tools.html#6
+#Rewrite 301 /stakeholder.html /tools.html#7
+#Rewrite 301 /sustain.html /resources.html#2
+#Rewrite 301 /model.html /resources.html#3
+#Rewrite 301 /evaluation.html /resources.html#4
+#Rewrite 301 /performance.html /resources.html#5
+#Rewrite 301 /research.html /resources.html#6
+#Rewrite 301 /faqdesign.html /faq.html#2
+#Rewrite 301 /faqstaff.html /faq.html#3
+#Rewrite 301 /faqpayout.html /faq.html#4
+#Rewrite 301 /faqamendments.html /faq.html#4
 
 # Force File Downloads
 AddType application/octet-stream .csv
