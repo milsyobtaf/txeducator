@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<a>
+	<title>DoodleDoo Reel</title>
+	<file>doodledoo_reel.flv</file>
+	
+	<cc beg = "0002" end = "0004">Doodle-Doo!</cc>
+	<cc beg = "0005" end = "0010">Second line of closed captioning.</cc>
+	<cc beg = "0010" end = "0013">Make sure to time the text with the movie.</cc>
+	<cc beg = "0013" end = "0020">Make sure that each block of text is on the screen long enough to read.</cc>
+	<ad>The audio descriptions of the video go here. Add in the audio descriptions within the script of the movie itself.</ad>
+</a>
