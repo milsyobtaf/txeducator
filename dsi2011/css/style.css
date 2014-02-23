@@ -1,0 +1,313 @@
+body {
+background: #D0E0F3 url('../images/tree_bg.png') fixed no-repeat bottom left;
+text-align:left;
+color:#666;
+font-size:14px;
+font-family:georgia, 'time new romans', serif;
+margin:0 auto;
+padding:0;
+}
+
+a {
+color: #376E22;
+text-decoration: none;
+}
+
+a:visited {
+color: purple;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+.bold {
+font-weight: bold;
+}
+
+.italic {
+font-style: italic;
+}
+
+.underline {
+text-decoration: underline;
+}
+
+h1 {
+color: #376E22;
+border: none;
+padding: 5px 20px 0px;
+font-size: 4em;
+position: fixed;
+font-family: 'Chewy', serif;
+font-style: normal;
+font-weight: 400;
+text-shadow: 0px 3px 3px #cdcdcd;
+filter: dropshadow(color=#cdcdcd, offx=-2, offy=2); 
+text-decoration: none;
+text-transform: none;
+letter-spacing: 0em;
+word-spacing: 0em;
+line-height: 1.2;
+}
+
+h1 img {
+position: fixed;
+left: 0;
+bottom: 0;
+}
+
+h2 {
+font-size: 24px;
+font-family: verdana, helvetica, arial, sans-serif;
+color:#444444;
+font-weight: 400;
+padding: 0 0 10px;
+}
+
+.innerbox h2 {
+padding: 5px 0;
+margin-left: -5px;
+}
+
+.innerbox h2 a {
+font-family: 'Chewy', serif;
+color: #376E22;
+text-shadow: 0px 3px 3px #cdcdcd;
+font-size: 1.4em;
+}
+
+h3 {
+font-size:14px;
+font-family:verdana, helvetica, arial, sans-serif;
+letter-spacing:-1px;
+color:#fff;
+font-weight: 700;
+text-transform:uppercase;
+margin:0;
+padding:8px 0 8px 0;
+}
+
+p {
+color:#fff;
+font-size: 20px;
+line-height: 38px;
+font-family: 'Trebuchet MS', verdana, helvetica, sans-serif;
+padding: 0 0 10px;
+margin: 20px 0 10px 0;
+}
+
+img {
+border:none;
+}
+
+.header {
+width: 360px;
+float: left;
+margin: 0 15px 0 0;
+padding: 0;
+}
+
+#menu {
+background: #d0e0f3 url('../images/clouds_nav_short.png') bottom right no-repeat;
+height: 100px;
+position: fixed;
+/*top: 40px;*/
+left: 0;
+clear: both;
+float: left;
+font-family: helvetica, sans-serif;
+font-weight: bold;
+font-size: 18px;
+font-variant: small-caps;
+/*margin: -35px 0 0;*/
+margin: 0;
+padding: 0 10px;
+z-index: -1;
+}
+
+#menu ul{
+list-style-type: none;
+margin: 0;
+padding: 75px 0 0;
+}
+
+#menu ul li{
+list-style-type: none;
+color: #376E22;
+display: inline;
+margin: 0;
+padding: 0 10px 0 10px;
+}
+
+#menu ul li a{
+text-decoration: none;
+list-style-type: none;
+color: #788A11;
+display: inline;
+margin: 0;
+padding: 0;
+}
+
+#menu ul li a:hover{
+text-decoration: underline;
+list-style-type: none;
+color: #376E22;
+display: inline;
+margin: 0;
+padding: 0;
+}
+
+#container {
+position: absolute;
+top: 90px;
+width: 5640px;
+margin: 0;
+padding: 0 0 0 200px;
+}
+
+.innerbox {
+background: #BED730;
+margin-left: 20px;
+padding: 20px 30px 40px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: -5px 5px 5px #d2d2d2;
+-moz-box-shadow: -5px 5px 5px #d2d2d2;
+box-shadow: -5px 5px 5px #d2d2d2;
+}
+
+.box {
+width: 700px;
+float: left;
+line-height: 22px;
+margin: 30px;
+}
+
+.box p {
+color: #376E22;
+font-size: 1.2em;
+line-height: 1.4em;
+padding: 0px;
+margin: 10px 0px;
+}
+
+.rightarrow,
+.leftarrow {
+padding: 0 5px 0 0;
+}
+
+.rightarrow a,
+.leftarrow a {
+font-family: 'Chewy', serif;
+font-size: 70px;
+font-style: normal;
+font-weight: 400;
+color: #376E22;
+text-shadow: 0px 3px 3px #cdcdcd;
+text-decoration: none;
+text-transform: none;
+letter-spacing: 0em;
+word-spacing: 0em;
+float: right;
+display: inline;
+margin-top: 10px;
+margin-right: -20px;
+}
+
+.footer {
+position: fixed;
+bottom: 0;
+left: 500px;
+z-index: -1;
+}
+
+.footer p,
+.footer a {
+color: #fbfbfb;
+font-size: .8em;
+line-height: 1.2em;
+margin: 0;
+padding: 5px;
+}
+
+.footer a {
+color: #376E22;
+text-decoration: underline;
+}
+
+/* jQuery Accordion CSS */
+.ui-accordion .ui-accordion-header {
+padding: 5px 0px 5px 20px;
+}
+
+.ui-accordion .ui-accordion-header .ui-icon {
+left: 0;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+background: url("../images/bluewhite_grad.png") repeat-x scroll 50% 50%;
+border: none;
+
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+background: url("../images/bluewhite_grad.png") repeat-x scroll 50% 50%;
+border: none;
+}
+
+.ui-widget-content {
+background: #F6F4F4;
+border: none;
+}
+p.ui-accordion-content {
+color: #1F1F1F;
+font-size: 1em;
+}
+
+div.ui-accordion-content p {
+color: #1F1F1F;
+font-size: 1em;
+}
+
+.ui-helper-reset {
+margin: -1px;
+}
+
+table.ui-accordion-content td {
+padding: 5px 40px 5px 0px;
+}
+
+table.ui-accordion-content td:first-child {
+width: 150px;
+text-align: right;
+}
+
+table.ui-accordion-content td:last-child {
+width: 500px;
+text-align: left;
+}
+
+table.ui-accordion-content tr:nth-child(2n+1) {
+background: #dddddd;
+}
+
+li.indent {
+font-size: .9em;
+padding-left: 10px;
+font-style: italic;
+}
+
+div.accordion a {
+color: #376E22;
+font-size: 1em;
+}
+
+div.accordion a:hover {
+text-decoration: underline;
+}
+
+div.accordion a:visited {
+color: purple;
+}
